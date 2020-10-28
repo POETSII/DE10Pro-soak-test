@@ -25,6 +25,7 @@ update-mif:
 .PHONY: clean
 clean:
 	rm -rf DE10_Pro_QSYS
+	rm -rf reset_release
 	rm -rf ip/DE10_Pro_QSYS/*/
 	rm -rf output_files synth_dumps tmp-clearbox qdb
 	make -C software clean

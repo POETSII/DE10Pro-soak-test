@@ -347,11 +347,16 @@ wire ddr4_d_status_local_cal_success;
 
 wire [11:0] ddr4_status;
 
+// Reset release
+wire ninit_done;
+reset_release reset_release (
+        .ninit_done(ninit_done)
+        );
 
 //=======================================================
 //  Structural coding
 //=======================================================
-assign reset_n = CPU_RESET_n;
+assign reset_n = !ninit_done && CPU_RESET_n;
 assign ddr4_status = {ddr4_a_status_local_cal_fail, ddr4_a_status_local_cal_success, ddr4_a_local_reset_done,
                       ddr4_b_status_local_cal_fail, ddr4_b_status_local_cal_success, ddr4_b_local_reset_done,
 							 ddr4_c_status_local_cal_fail, ddr4_c_status_local_cal_success, ddr4_c_local_reset_done,
