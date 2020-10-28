@@ -1,0 +1,4934 @@
+<html>
+<body>
+<title>DE10 Pro Board Configuration</title> 
+<h2 align="center">DE10 Pro Board Configuration</h2>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="http://www.terasic.com">
+        <img src="http://www.terasic.com.cn/theme/2012/images/top_menu_03.jpg" />
+     </a>
+     <a href="http://www.terasic.com">www.terasic.com</a>
+     <br>
+     </br>
+     <span style="font-family:arial;">Copyright &copy 2003-2018 Terasic Inc. All Rights Reserved. </span>
+<br />
+<br />
+<h3 align="left">Pin Assignments:</h3>
+
+<style>
+#nav30 { position:fixed;right:30%;top:12%; }
+</style>
+   <div id="nav30">
+   <nav>
+    <a href="#CLOCK"><li>CLOCK</li></a>
+    <a href="#Buttons"><li>Buttons</li></a>
+    <a href="#FPGA"><li>FPGA</li></a>
+    <a href="#Swtiches"><li>Swtiches</li></a>
+    <a href="#LED"><li>LED</li></a>
+    <a href="#FLASH"><li>FLASH</li></a>
+    <a href="#DDR4A"><li>DDR4A</li></a>
+    <a href="#DDR4B"><li>DDR4B</li></a>
+    <a href="#DDR4C"><li>DDR4C</li></a>
+    <a href="#DDR4D"><li>DDR4D</li></a>
+    <a href="#SI5340A0"><li>SI5340A0</li></a>
+    <a href="#SI5340A1"><li>SI5340A1</li></a>
+    <a href="#I2Cs"><li>I2Cs</li></a>
+    <a href="#GPIO"><li>GPIO</li></a>
+    <a href="#PCIE"><li>PCIE</li></a>
+    <a href="#QSFP28A"><li>QSFP28A</li></a>
+    <a href="#QSFP28B"><li>QSFP28B</li></a>
+    <a href="#QSFP28C"><li>QSFP28C</li></a>
+    <a href="#QSFP28D"><li>QSFP28D</li></a>
+    <a href="#HPS"><li>HPS</li></a>
+    <a href="#M5S10"><li>M5S10</li></a>
+    <a href="#UFL"><li>UFL</li></a>
+   </nav>
+   </div>
+<style>
+#nav4 { position:fixed;right:4%;top:12%; }
+</style>
+   <div id="nav4">
+   <nav>
+   </nav>
+   </div>
+<h2><a name="CLOCK"></a></h2><table border="3">
+<caption>CLOCK</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">CLK_100_B3I</td>
+   <td align="left">U24</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">CLK_50_B2C</td>
+   <td align="left">AW38</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">CLK_50_B2L</td>
+   <td align="left">J25</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">CLK_50_B3C</td>
+   <td align="left">BF21</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">CLK_50_B3I</td>
+   <td align="left">M24</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">CLK_50_B3L</td>
+   <td align="left">J20</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+</table>
+<h2><a name="Buttons"></a></h2><table border="3">
+<caption>Buttons</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">CPU_RESET_n</td>
+   <td align="left">BF27</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">BUTTON[0]</td>
+   <td align="left">D24</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">BUTTON[1]</td>
+   <td align="left">D23</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+</table>
+<h2><a name="FPGA"></a></h2><table border="3">
+<caption>FPGA</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">FPGA_PR_DONE</td>
+   <td align="left">AY27</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FPGA_PR_ERROR</td>
+   <td align="left">BD28</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FPGA_PR_REQUEST</td>
+   <td align="left">BC28</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+</table>
+<h2><a name="Swtiches"></a></h2><table border="3">
+<caption>Swtiches</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">SW[0]</td>
+   <td align="left">C23</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">SW[1]</td>
+   <td align="left">B23</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+</table>
+<h2><a name="LED"></a></h2><table border="3">
+<caption>LED</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">LED[0]</td>
+   <td align="left">B24</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">LED[1]</td>
+   <td align="left">A24</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">LED[2]</td>
+   <td align="left">A25</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">LED[3]</td>
+   <td align="left">A26</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+</table>
+<h2><a name="FLASH"></a></h2><table border="3">
+<caption>FLASH</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">FLASH_CLK</td>
+   <td align="left">U23</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[1]</td>
+   <td align="left">V22</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[2]</td>
+   <td align="left">P23</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[3]</td>
+   <td align="left">K22</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[4]</td>
+   <td align="left">R21</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[5]</td>
+   <td align="left">K24</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[6]</td>
+   <td align="left">K23</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[7]</td>
+   <td align="left">R24</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[8]</td>
+   <td align="left">AR28</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[9]</td>
+   <td align="left">AR27</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[10]</td>
+   <td align="left">AN26</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[11]</td>
+   <td align="left">AP26</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[12]</td>
+   <td align="left">AN25</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[13]</td>
+   <td align="left">AU27</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[14]</td>
+   <td align="left">AP28</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[15]</td>
+   <td align="left">AT27</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[16]</td>
+   <td align="left">AY28</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[17]</td>
+   <td align="left">AY26</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[18]</td>
+   <td align="left">AP30</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[19]</td>
+   <td align="left">AW25</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[20]</td>
+   <td align="left">BB27</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[21]</td>
+   <td align="left">AT26</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[22]</td>
+   <td align="left">AP31</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[23]</td>
+   <td align="left">P24</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[24]</td>
+   <td align="left">AV26</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[25]</td>
+   <td align="left">AV27</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[26]</td>
+   <td align="left">AP29</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_A[27]</td>
+   <td align="left">N22</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[0]</td>
+   <td align="left">N23</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[1]</td>
+   <td align="left">R22</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[2]</td>
+   <td align="left">U20</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[3]</td>
+   <td align="left">L22</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[4]</td>
+   <td align="left">J23</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[5]</td>
+   <td align="left">U22</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[6]</td>
+   <td align="left">V23</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[7]</td>
+   <td align="left">V21</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[8]</td>
+   <td align="left">M23</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[9]</td>
+   <td align="left">R23</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[10]</td>
+   <td align="left">T20</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[11]</td>
+   <td align="left">V24</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[12]</td>
+   <td align="left">M22</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[13]</td>
+   <td align="left">T22</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[14]</td>
+   <td align="left">T21</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_D[15]</td>
+   <td align="left">J24</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_CE_n</td>
+   <td align="left">AR26</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_WE_n</td>
+   <td align="left">AT25</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_OE_n</td>
+   <td align="left">AV25</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_ADV_n</td>
+   <td align="left">AU25</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_RESET_n</td>
+   <td align="left">AP25</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FLASH_RDY_BSY_n</td>
+   <td align="left">AW26</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+</table>
+<h2><a name="DDR4A"></a></h2><table border="3">
+<caption>DDR4A</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">DDR4A_REFCLK_p</td>
+   <td align="left">M35</td>
+   <td align="left">input</td>
+   <td align="left">LVDS</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[0]</td>
+   <td align="left">K38</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[1]</td>
+   <td align="left">L37</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[2]</td>
+   <td align="left">M37</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[3]</td>
+   <td align="left">M38</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[4]</td>
+   <td align="left">J39</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[5]</td>
+   <td align="left">J38</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[6]</td>
+   <td align="left">K39</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[7]</td>
+   <td align="left">L39</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[8]</td>
+   <td align="left">P37</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[9]</td>
+   <td align="left">R37</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[10]</td>
+   <td align="left">N37</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[11]</td>
+   <td align="left">P38</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[12]</td>
+   <td align="left">P35</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[13]</td>
+   <td align="left">K36</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[14]</td>
+   <td align="left">K37</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[15]</td>
+   <td align="left">N36</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_A[16]</td>
+   <td align="left">P36</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_BA[0]</td>
+   <td align="left">L36</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_BA[1]</td>
+   <td align="left">T35</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_BG[0]</td>
+   <td align="left">R36</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_BG[1]</td>
+   <td align="left">D40</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_CK</td>
+   <td align="left">F39</td>
+   <td align="left">output</td>
+   <td align="left">DIFFERENTIAL 1.2-V SSTL</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_CK_n</td>
+   <td align="left">G39</td>
+   <td align="left">output</td>
+   <td align="left">DIFFERENTIAL 1.2-V SSTL</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_CKE</td>
+   <td align="left">L40</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS[0]</td>
+   <td align="left">A36</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS[1]</td>
+   <td align="left">E36</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS[2]</td>
+   <td align="left">G33</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS[3]</td>
+   <td align="left">L32</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS[4]</td>
+   <td align="left">T26</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS[5]</td>
+   <td align="left">V28</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS[6]</td>
+   <td align="left">J26</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS[7]</td>
+   <td align="left">E26</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS[8]</td>
+   <td align="left">R32</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS_n[0]</td>
+   <td align="left">A35</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS_n[1]</td>
+   <td align="left">F36</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS_n[2]</td>
+   <td align="left">G34</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS_n[3]</td>
+   <td align="left">L31</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS_n[4]</td>
+   <td align="left">R27</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS_n[5]</td>
+   <td align="left">V27</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS_n[6]</td>
+   <td align="left">K26</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS_n[7]</td>
+   <td align="left">F26</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQS_n[8]</td>
+   <td align="left">T32</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[0]</td>
+   <td align="left">A37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[1]</td>
+   <td align="left">B37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[2]</td>
+   <td align="left">B35</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[3]</td>
+   <td align="left">C37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[4]</td>
+   <td align="left">B38</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[5]</td>
+   <td align="left">C38</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[6]</td>
+   <td align="left">C35</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[7]</td>
+   <td align="left">D36</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[8]</td>
+   <td align="left">H37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[9]</td>
+   <td align="left">E39</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[10]</td>
+   <td align="left">E37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[11]</td>
+   <td align="left">D35</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[12]</td>
+   <td align="left">E38</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[13]</td>
+   <td align="left">D38</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[14]</td>
+   <td align="left">D34</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[15]</td>
+   <td align="left">F37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[16]</td>
+   <td align="left">F35</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[17]</td>
+   <td align="left">J36</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[18]</td>
+   <td align="left">J35</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[19]</td>
+   <td align="left">E34</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[20]</td>
+   <td align="left">G35</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[21]</td>
+   <td align="left">H36</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[22]</td>
+   <td align="left">H35</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[23]</td>
+   <td align="left">H33</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[24]</td>
+   <td align="left">N32</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[25]</td>
+   <td align="left">M33</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[26]</td>
+   <td align="left">K34</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[27]</td>
+   <td align="left">M34</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[28]</td>
+   <td align="left">N33</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[29]</td>
+   <td align="left">N31</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[30]</td>
+   <td align="left">K33</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[31]</td>
+   <td align="left">K32</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[32]</td>
+   <td align="left">M25</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[33]</td>
+   <td align="left">P25</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[34]</td>
+   <td align="left">T25</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[35]</td>
+   <td align="left">R26</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[36]</td>
+   <td align="left">L25</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[37]</td>
+   <td align="left">N27</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[38]</td>
+   <td align="left">U25</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[39]</td>
+   <td align="left">P26</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[40]</td>
+   <td align="left">U27</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[41]</td>
+   <td align="left">T29</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[42]</td>
+   <td align="left">V25</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[43]</td>
+   <td align="left">U29</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[44]</td>
+   <td align="left">U28</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[45]</td>
+   <td align="left">T30</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[46]</td>
+   <td align="left">V26</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[47]</td>
+   <td align="left">U30</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[48]</td>
+   <td align="left">F25</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[49]</td>
+   <td align="left">K27</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[50]</td>
+   <td align="left">L27</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[51]</td>
+   <td align="left">H26</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[52]</td>
+   <td align="left">H25</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[53]</td>
+   <td align="left">H27</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[54]</td>
+   <td align="left">M27</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[55]</td>
+   <td align="left">G25</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[56]</td>
+   <td align="left">D26</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[57]</td>
+   <td align="left">B27</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[58]</td>
+   <td align="left">G27</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[59]</td>
+   <td align="left">B25</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[60]</td>
+   <td align="left">C27</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[61]</td>
+   <td align="left">C26</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[62]</td>
+   <td align="left">F27</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[63]</td>
+   <td align="left">D25</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[64]</td>
+   <td align="left">R31</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[65]</td>
+   <td align="left">T34</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[66]</td>
+   <td align="left">R34</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[67]</td>
+   <td align="left">P33</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[68]</td>
+   <td align="left">T31</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[69]</td>
+   <td align="left">U33</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[70]</td>
+   <td align="left">V32</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DQ[71]</td>
+   <td align="left">U32</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DBI_n[0]</td>
+   <td align="left">C36</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DBI_n[1]</td>
+   <td align="left">D39</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DBI_n[2]</td>
+   <td align="left">F34</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DBI_n[3]</td>
+   <td align="left">J34</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DBI_n[4]</td>
+   <td align="left">N25</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DBI_n[5]</td>
+   <td align="left">V30</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DBI_n[6]</td>
+   <td align="left">L26</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DBI_n[7]</td>
+   <td align="left">E27</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_DBI_n[8]</td>
+   <td align="left">U34</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_CS_n</td>
+   <td align="left">G38</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_RESET_n</td>
+   <td align="left">E40</td>
+   <td align="left">output</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_ODT</td>
+   <td align="left">G40</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_PAR</td>
+   <td align="left">H40</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_ALERT_n</td>
+   <td align="left">A38</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_ACT_n</td>
+   <td align="left">H38</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_EVENT_n</td>
+   <td align="left">J33</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_SCL</td>
+   <td align="left">L24</td>
+   <td align="left">inout</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_SDA</td>
+   <td align="left">T24</td>
+   <td align="left">inout</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_AC_R[0]</td>
+   <td align="left">J40</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_AC_R[1]</td>
+   <td align="left">L35</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_C[0]</td>
+   <td align="left">F40</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_C[1]</td>
+   <td align="left">K40</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4A_RZQ</td>
+   <td align="left">P34</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+</table>
+<h2><a name="DDR4B"></a></h2><table border="3">
+<caption>DDR4B</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">DDR4B_REFCLK_p</td>
+   <td align="left">J16</td>
+   <td align="left">input</td>
+   <td align="left">LVDS</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[0]</td>
+   <td align="left">C16</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[1]</td>
+   <td align="left">D16</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[2]</td>
+   <td align="left">A14</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[3]</td>
+   <td align="left">A15</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[4]</td>
+   <td align="left">B14</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[5]</td>
+   <td align="left">B13</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[6]</td>
+   <td align="left">A16</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[7]</td>
+   <td align="left">B15</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[8]</td>
+   <td align="left">C15</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[9]</td>
+   <td align="left">D15</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[10]</td>
+   <td align="left">E16</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[11]</td>
+   <td align="left">F16</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[12]</td>
+   <td align="left">L14</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[13]</td>
+   <td align="left">H15</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[14]</td>
+   <td align="left">J15</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[15]</td>
+   <td align="left">G15</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_A[16]</td>
+   <td align="left">F15</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_BA[0]</td>
+   <td align="left">H17</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_BA[1]</td>
+   <td align="left">K14</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_BG[0]</td>
+   <td align="left">J14</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_BG[1]</td>
+   <td align="left">G13</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_CK</td>
+   <td align="left">E14</td>
+   <td align="left">output</td>
+   <td align="left">DIFFERENTIAL 1.2-V SSTL</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_CK_n</td>
+   <td align="left">D14</td>
+   <td align="left">output</td>
+   <td align="left">DIFFERENTIAL 1.2-V SSTL</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_CKE</td>
+   <td align="left">C13</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS[0]</td>
+   <td align="left">U17</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS[1]</td>
+   <td align="left">P12</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS[2]</td>
+   <td align="left">L12</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS[3]</td>
+   <td align="left">H12</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS[4]</td>
+   <td align="left">M20</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS[5]</td>
+   <td align="left">F20</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS[6]</td>
+   <td align="left">D20</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS[7]</td>
+   <td align="left">C17</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS[8]</td>
+   <td align="left">L17</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS_n[0]</td>
+   <td align="left">T17</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS_n[1]</td>
+   <td align="left">P13</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS_n[2]</td>
+   <td align="left">M12</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS_n[3]</td>
+   <td align="left">G12</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS_n[4]</td>
+   <td align="left">L20</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS_n[5]</td>
+   <td align="left">F21</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS_n[6]</td>
+   <td align="left">C20</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS_n[7]</td>
+   <td align="left">C18</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQS_n[8]</td>
+   <td align="left">K17</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[0]</td>
+   <td align="left">T16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[1]</td>
+   <td align="left">V18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[2]</td>
+   <td align="left">R19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[3]</td>
+   <td align="left">U18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[4]</td>
+   <td align="left">U19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[5]</td>
+   <td align="left">W18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[6]</td>
+   <td align="left">R18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[7]</td>
+   <td align="left">V17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[8]</td>
+   <td align="left">P16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[9]</td>
+   <td align="left">P14</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[10]</td>
+   <td align="left">P15</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[11]</td>
+   <td align="left">R13</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[12]</td>
+   <td align="left">R17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[13]</td>
+   <td align="left">N13</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[14]</td>
+   <td align="left">R14</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[15]</td>
+   <td align="left">M13</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[16]</td>
+   <td align="left">J11</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[17]</td>
+   <td align="left">K10</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[18]</td>
+   <td align="left">K11</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[19]</td>
+   <td align="left">J13</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[20]</td>
+   <td align="left">K13</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[21]</td>
+   <td align="left">L10</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[22]</td>
+   <td align="left">K12</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[23]</td>
+   <td align="left">H11</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[24]</td>
+   <td align="left">F10</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[25]</td>
+   <td align="left">E10</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[26]</td>
+   <td align="left">H10</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[27]</td>
+   <td align="left">F12</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[28]</td>
+   <td align="left">G10</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[29]</td>
+   <td align="left">F11</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[30]</td>
+   <td align="left">E11</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[31]</td>
+   <td align="left">E12</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[32]</td>
+   <td align="left">N20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[33]</td>
+   <td align="left">H21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[34]</td>
+   <td align="left">P21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[35]</td>
+   <td align="left">K19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[36]</td>
+   <td align="left">K21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[37]</td>
+   <td align="left">J21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[38]</td>
+   <td align="left">N21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[39]</td>
+   <td align="left">L19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[40]</td>
+   <td align="left">H18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[41]</td>
+   <td align="left">G19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[42]</td>
+   <td align="left">J18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[43]</td>
+   <td align="left">G20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[44]</td>
+   <td align="left">G18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[45]</td>
+   <td align="left">F19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[46]</td>
+   <td align="left">K18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[47]</td>
+   <td align="left">H20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[48]</td>
+   <td align="left">E17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[49]</td>
+   <td align="left">D21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[50]</td>
+   <td align="left">E18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[51]</td>
+   <td align="left">C22</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[52]</td>
+   <td align="left">D19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[53]</td>
+   <td align="left">F17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[54]</td>
+   <td align="left">D18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[55]</td>
+   <td align="left">C21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[56]</td>
+   <td align="left">B20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[57]</td>
+   <td align="left">B18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[58]</td>
+   <td align="left">B22</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[59]</td>
+   <td align="left">A17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[60]</td>
+   <td align="left">B19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[61]</td>
+   <td align="left">A20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[62]</td>
+   <td align="left">A22</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[63]</td>
+   <td align="left">A19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[64]</td>
+   <td align="left">P18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[65]</td>
+   <td align="left">K16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[66]</td>
+   <td align="left">M15</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[67]</td>
+   <td align="left">M18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[68]</td>
+   <td align="left">N16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[69]</td>
+   <td align="left">L16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[70]</td>
+   <td align="left">N18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DQ[71]</td>
+   <td align="left">M17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DBI_n[0]</td>
+   <td align="left">T19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DBI_n[1]</td>
+   <td align="left">M14</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DBI_n[2]</td>
+   <td align="left">J10</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DBI_n[3]</td>
+   <td align="left">D11</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DBI_n[4]</td>
+   <td align="left">L21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DBI_n[5]</td>
+   <td align="left">J19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DBI_n[6]</td>
+   <td align="left">E19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DBI_n[7]</td>
+   <td align="left">A21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_DBI_n[8]</td>
+   <td align="left">N15</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_CS_n</td>
+   <td align="left">E13</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_RESET_n</td>
+   <td align="left">H13</td>
+   <td align="left">output</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_ODT</td>
+   <td align="left">G14</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_PAR</td>
+   <td align="left">A12</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_ALERT_n</td>
+   <td align="left">T15</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_ACT_n</td>
+   <td align="left">D13</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_EVENT_n</td>
+   <td align="left">L11</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_SCL</td>
+   <td align="left">D10</td>
+   <td align="left">inout</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_SDA</td>
+   <td align="left">P20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_AC_R[0]</td>
+   <td align="left">B12</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_AC_R[1]</td>
+   <td align="left">G17</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_C[0]</td>
+   <td align="left">F14</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_C[1]</td>
+   <td align="left">C12</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4B_RZQ</td>
+   <td align="left">L15</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+</table>
+<h2><a name="DDR4C"></a></h2><table border="3">
+<caption>DDR4C</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">DDR4C_REFCLK_p</td>
+   <td align="left">BH33</td>
+   <td align="left">input</td>
+   <td align="left">LVDS</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[0]</td>
+   <td align="left">AY34</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[1]</td>
+   <td align="left">BA34</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[2]</td>
+   <td align="left">BA36</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[3]</td>
+   <td align="left">AY36</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[4]</td>
+   <td align="left">AW34</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[5]</td>
+   <td align="left">AW35</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[6]</td>
+   <td align="left">BB35</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[7]</td>
+   <td align="left">BA35</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[8]</td>
+   <td align="left">AW33</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[9]</td>
+   <td align="left">AY33</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[10]</td>
+   <td align="left">AW36</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[11]</td>
+   <td align="left">AV36</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[12]</td>
+   <td align="left">BJ36</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[13]</td>
+   <td align="left">BE33</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[14]</td>
+   <td align="left">BE34</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[15]</td>
+   <td align="left">BH35</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_A[16]</td>
+   <td align="left">BG35</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_BA[0]</td>
+   <td align="left">BJ34</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_BA[1]</td>
+   <td align="left">BG34</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_BG[0]</td>
+   <td align="left">BF34</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_BG[1]</td>
+   <td align="left">AU34</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_CK</td>
+   <td align="left">AV33</td>
+   <td align="left">output</td>
+   <td align="left">DIFFERENTIAL 1.2-V SSTL</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_CK_n</td>
+   <td align="left">AV32</td>
+   <td align="left">output</td>
+   <td align="left">DIFFERENTIAL 1.2-V SSTL</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_CKE</td>
+   <td align="left">AT35</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS[0]</td>
+   <td align="left">AT37</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS[1]</td>
+   <td align="left">AY38</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS[2]</td>
+   <td align="left">BF37</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS[3]</td>
+   <td align="left">BD39</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS[4]</td>
+   <td align="left">BH31</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS[5]</td>
+   <td align="left">BC30</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS[6]</td>
+   <td align="left">BA32</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS[7]</td>
+   <td align="left">AW28</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS[8]</td>
+   <td align="left">BD34</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS_n[0]</td>
+   <td align="left">AT36</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS_n[1]</td>
+   <td align="left">AY39</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS_n[2]</td>
+   <td align="left">BE37</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS_n[3]</td>
+   <td align="left">BD38</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS_n[4]</td>
+   <td align="left">BJ31</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS_n[5]</td>
+   <td align="left">BD30</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS_n[6]</td>
+   <td align="left">BB32</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS_n[7]</td>
+   <td align="left">AV28</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQS_n[8]</td>
+   <td align="left">BD35</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[0]</td>
+   <td align="left">AP35</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[1]</td>
+   <td align="left">AT38</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[2]</td>
+   <td align="left">AP36</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[3]</td>
+   <td align="left">AR33</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[4]</td>
+   <td align="left">AN33</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[5]</td>
+   <td align="left">AR37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[6]</td>
+   <td align="left">AR36</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[7]</td>
+   <td align="left">AR34</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[8]</td>
+   <td align="left">AU38</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[9]</td>
+   <td align="left">AV40</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[10]</td>
+   <td align="left">AW40</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[11]</td>
+   <td align="left">AV37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[12]</td>
+   <td align="left">AU37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[13]</td>
+   <td align="left">AW39</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[14]</td>
+   <td align="left">AV38</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[15]</td>
+   <td align="left">BA37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[16]</td>
+   <td align="left">BD40</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[17]</td>
+   <td align="left">BF39</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[18]</td>
+   <td align="left">BG38</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[19]</td>
+   <td align="left">BH36</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[20]</td>
+   <td align="left">BE38</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[21]</td>
+   <td align="left">BE39</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[22]</td>
+   <td align="left">BG37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[23]</td>
+   <td align="left">BH37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[24]</td>
+   <td align="left">BB38</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[25]</td>
+   <td align="left">BB39</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[26]</td>
+   <td align="left">BC38</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[27]</td>
+   <td align="left">BC37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[28]</td>
+   <td align="left">BA40</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[29]</td>
+   <td align="left">AY40</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[30]</td>
+   <td align="left">BC40</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[31]</td>
+   <td align="left">BB37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[32]</td>
+   <td align="left">BF29</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[33]</td>
+   <td align="left">BE28</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[34]</td>
+   <td align="left">BJ28</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[35]</td>
+   <td align="left">BJ30</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[36]</td>
+   <td align="left">BE32</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[37]</td>
+   <td align="left">BG32</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[38]</td>
+   <td align="left">BH28</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[39]</td>
+   <td align="left">BJ29</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[40]</td>
+   <td align="left">BE31</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[41]</td>
+   <td align="left">BD29</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[42]</td>
+   <td align="left">BF31</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[43]</td>
+   <td align="left">BG30</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[44]</td>
+   <td align="left">BF30</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[45]</td>
+   <td align="left">BE29</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[46]</td>
+   <td align="left">BG29</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[47]</td>
+   <td align="left">BH30</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[48]</td>
+   <td align="left">BA31</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[49]</td>
+   <td align="left">BC32</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[50]</td>
+   <td align="left">BB30</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[51]</td>
+   <td align="left">AW31</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[52]</td>
+   <td align="left">BC31</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[53]</td>
+   <td align="left">AY32</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[54]</td>
+   <td align="left">BB29</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[55]</td>
+   <td align="left">BA30</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[56]</td>
+   <td align="left">AU28</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[57]</td>
+   <td align="left">AT29</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[58]</td>
+   <td align="left">AW29</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[59]</td>
+   <td align="left">AY29</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[60]</td>
+   <td align="left">AT30</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[61]</td>
+   <td align="left">AU29</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[62]</td>
+   <td align="left">AU30</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[63]</td>
+   <td align="left">BA29</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[64]</td>
+   <td align="left">BD36</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[65]</td>
+   <td align="left">BF35</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[66]</td>
+   <td align="left">BC36</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[67]</td>
+   <td align="left">BD33</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[68]</td>
+   <td align="left">BE36</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[69]</td>
+   <td align="left">BF36</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[70]</td>
+   <td align="left">BB34</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DQ[71]</td>
+   <td align="left">BB33</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DBI_n[0]</td>
+   <td align="left">AP33</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DBI_n[1]</td>
+   <td align="left">AY37</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DBI_n[2]</td>
+   <td align="left">BE40</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DBI_n[3]</td>
+   <td align="left">BB40</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DBI_n[4]</td>
+   <td align="left">BF32</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DBI_n[5]</td>
+   <td align="left">BD31</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DBI_n[6]</td>
+   <td align="left">AW30</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DBI_n[7]</td>
+   <td align="left">AV30</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_DBI_n[8]</td>
+   <td align="left">BC35</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_CS_n</td>
+   <td align="left">AV35</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_RESET_n</td>
+   <td align="left">AU33</td>
+   <td align="left">output</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_ODT</td>
+   <td align="left">AR32</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_PAR</td>
+   <td align="left">AT32</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_ALERT_n</td>
+   <td align="left">AP34</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_ACT_n</td>
+   <td align="left">AU35</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_EVENT_n</td>
+   <td align="left">AY31</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_SCL</td>
+   <td align="left">BB28</td>
+   <td align="left">inout</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_SDA</td>
+   <td align="left">BH32</td>
+   <td align="left">inout</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_AC_R[0]</td>
+   <td align="left">AU32</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_AC_R[1]</td>
+   <td align="left">BJ33</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_C[0]</td>
+   <td align="left">AR31</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_C[1]</td>
+   <td align="left">AT34</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4C_RZQ</td>
+   <td align="left">BJ35</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+</table>
+<h2><a name="DDR4D"></a></h2><table border="3">
+<caption>DDR4D</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">DDR4D_REFCLK_p</td>
+   <td align="left">AT17</td>
+   <td align="left">input</td>
+   <td align="left">LVDS</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[0]</td>
+   <td align="left">AY11</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[1]</td>
+   <td align="left">AW11</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[2]</td>
+   <td align="left">BA10</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[3]</td>
+   <td align="left">BA11</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[4]</td>
+   <td align="left">BA12</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[5]</td>
+   <td align="left">AY12</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[6]</td>
+   <td align="left">AV11</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[7]</td>
+   <td align="left">AV12</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[8]</td>
+   <td align="left">AW13</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[9]</td>
+   <td align="left">AY13</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[10]</td>
+   <td align="left">AW10</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[11]</td>
+   <td align="left">AV10</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[12]</td>
+   <td align="left">AN18</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[13]</td>
+   <td align="left">AR17</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[14]</td>
+   <td align="left">AR16</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[15]</td>
+   <td align="left">AT15</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_A[16]</td>
+   <td align="left">AT16</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_BA[0]</td>
+   <td align="left">AU14</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_BA[1]</td>
+   <td align="left">AP18</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_BG[0]</td>
+   <td align="left">AR18</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_BG[1]</td>
+   <td align="left">BF11</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_CK</td>
+   <td align="left">BC12</td>
+   <td align="left">output</td>
+   <td align="left">DIFFERENTIAL 1.2-V SSTL</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_CK_n</td>
+   <td align="left">BB12</td>
+   <td align="left">output</td>
+   <td align="left">DIFFERENTIAL 1.2-V SSTL</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_CKE</td>
+   <td align="left">BC10</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS[0]</td>
+   <td align="left">BJ19</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS[1]</td>
+   <td align="left">BE19</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS[2]</td>
+   <td align="left">AN21</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS[3]</td>
+   <td align="left">AW21</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS[4]</td>
+   <td align="left">AW18</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS[5]</td>
+   <td align="left">BA14</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS[6]</td>
+   <td align="left">BJ15</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS[7]</td>
+   <td align="left">BF16</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS[8]</td>
+   <td align="left">AP12</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS_n[0]</td>
+   <td align="left">BJ20</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS_n[1]</td>
+   <td align="left">BF19</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS_n[2]</td>
+   <td align="left">AP21</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS_n[3]</td>
+   <td align="left">AY21</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS_n[4]</td>
+   <td align="left">AV18</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS_n[5]</td>
+   <td align="left">BB14</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS_n[6]</td>
+   <td align="left">BH15</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS_n[7]</td>
+   <td align="left">BE16</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQS_n[8]</td>
+   <td align="left">AR13</td>
+   <td align="left">inout</td>
+   <td align="left">DIFFERENTIAL 1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[0]</td>
+   <td align="left">BF17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[1]</td>
+   <td align="left">BG19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[2]</td>
+   <td align="left">BH20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[3]</td>
+   <td align="left">BG17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[4]</td>
+   <td align="left">BG18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[5]</td>
+   <td align="left">BH17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[6]</td>
+   <td align="left">BH21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[7]</td>
+   <td align="left">BJ18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[8]</td>
+   <td align="left">BD20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[9]</td>
+   <td align="left">BB18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[10]</td>
+   <td align="left">BD19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[11]</td>
+   <td align="left">BE18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[12]</td>
+   <td align="left">BE21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[13]</td>
+   <td align="left">BC18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[14]</td>
+   <td align="left">BD18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[15]</td>
+   <td align="left">BG20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[16]</td>
+   <td align="left">AT19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[17]</td>
+   <td align="left">AR21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[18]</td>
+   <td align="left">AU20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[19]</td>
+   <td align="left">AV20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[20]</td>
+   <td align="left">AR19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[21]</td>
+   <td align="left">AT21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[22]</td>
+   <td align="left">AT20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[23]</td>
+   <td align="left">AP20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[24]</td>
+   <td align="left">BC20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[25]</td>
+   <td align="left">BD21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[26]</td>
+   <td align="left">BA21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[27]</td>
+   <td align="left">BA19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[28]</td>
+   <td align="left">AW19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[29]</td>
+   <td align="left">AW20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[30]</td>
+   <td align="left">BA20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[31]</td>
+   <td align="left">BB19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[32]</td>
+   <td align="left">AY16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[33]</td>
+   <td align="left">AV17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[34]</td>
+   <td align="left">BB17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[35]</td>
+   <td align="left">AY17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[36]</td>
+   <td align="left">AV16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[37]</td>
+   <td align="left">AW16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[38]</td>
+   <td align="left">BC17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[39]</td>
+   <td align="left">BA17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[40]</td>
+   <td align="left">BC15</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[41]</td>
+   <td align="left">BA16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[42]</td>
+   <td align="left">AV15</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[43]</td>
+   <td align="left">BC13</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[44]</td>
+   <td align="left">AW14</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[45]</td>
+   <td align="left">BA15</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[46]</td>
+   <td align="left">AW15</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[47]</td>
+   <td align="left">BB13</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[48]</td>
+   <td align="left">BJ16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[49]</td>
+   <td align="left">BH12</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[50]</td>
+   <td align="left">BJ14</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[51]</td>
+   <td align="left">BF12</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[52]</td>
+   <td align="left">BG13</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[53]</td>
+   <td align="left">BH16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[54]</td>
+   <td align="left">BJ13</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[55]</td>
+   <td align="left">BG12</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[56]</td>
+   <td align="left">BF14</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[57]</td>
+   <td align="left">BD15</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[58]</td>
+   <td align="left">BD16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[59]</td>
+   <td align="left">BC16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[60]</td>
+   <td align="left">BD14</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[61]</td>
+   <td align="left">BF15</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[62]</td>
+   <td align="left">BE13</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[63]</td>
+   <td align="left">BG15</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[64]</td>
+   <td align="left">AT12</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[65]</td>
+   <td align="left">AP15</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[66]</td>
+   <td align="left">AT14</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[67]</td>
+   <td align="left">AR14</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[68]</td>
+   <td align="left">AP13</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[69]</td>
+   <td align="left">AP16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[70]</td>
+   <td align="left">AU12</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DQ[71]</td>
+   <td align="left">AV13</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DBI_n[0]</td>
+   <td align="left">BE17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DBI_n[1]</td>
+   <td align="left">BF20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DBI_n[2]</td>
+   <td align="left">AN20</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DBI_n[3]</td>
+   <td align="left">BC21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DBI_n[4]</td>
+   <td align="left">AY18</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DBI_n[5]</td>
+   <td align="left">AY14</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DBI_n[6]</td>
+   <td align="left">BG14</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DBI_n[7]</td>
+   <td align="left">BD13</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_DBI_n[8]</td>
+   <td align="left">AU13</td>
+   <td align="left">inout</td>
+   <td align="left">1.2-V POD</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_CS_n</td>
+   <td align="left">BE10</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_RESET_n</td>
+   <td align="left">BF10</td>
+   <td align="left">output</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_ODT</td>
+   <td align="left">BE12</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_PAR</td>
+   <td align="left">BC11</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_ALERT_n</td>
+   <td align="left">BH18</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_ACT_n</td>
+   <td align="left">BD10</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_EVENT_n</td>
+   <td align="left">BH13</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_SCL</td>
+   <td align="left">BE14</td>
+   <td align="left">inout</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_SDA</td>
+   <td align="left">AY19</td>
+   <td align="left">inout</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_AC_R[0]</td>
+   <td align="left">BD11</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_AC_R[1]</td>
+   <td align="left">AU15</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_C[0]</td>
+   <td align="left">BE11</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_C[1]</td>
+   <td align="left">BB10</td>
+   <td align="left">output</td>
+   <td align="left">SSTL-12</td>
+</tr>
+<tr>
+   <td align="left">DDR4D_RZQ</td>
+   <td align="left">AN17</td>
+   <td align="left">input</td>
+   <td align="left">1.2 V</td>
+</tr>
+</table>
+<h2><a name="SI5340A0"></a></h2><table border="3">
+<caption>SI5340A0</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">SI5340A0_I2C_SCL</td>
+   <td align="left">BJ25</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">SI5340A0_I2C_SDA</td>
+   <td align="left">BJ26</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">SI5340A0_INTR</td>
+   <td align="left">BH26</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">SI5340A0_OE_n</td>
+   <td align="left">BH25</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">SI5340A0_RST_n</td>
+   <td align="left">BH27</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+</table>
+<h2><a name="SI5340A1"></a></h2><table border="3">
+<caption>SI5340A1</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">SI5340A1_I2C_SCL</td>
+   <td align="left">G22</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">SI5340A1_I2C_SDA</td>
+   <td align="left">H22</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">SI5340A1_INTR</td>
+   <td align="left">H23</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">SI5340A1_OE_n</td>
+   <td align="left">G23</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">SI5340A1_RST_n</td>
+   <td align="left">G24</td>
+   <td align="left">output</td>
+   <td align="left">1.8 V</td>
+</tr>
+</table>
+<h2><a name="I2Cs"></a></h2><table border="3">
+<caption>I2Cs</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">FAN_I2C_SCL</td>
+   <td align="left">BD26</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FAN_I2C_SDA</td>
+   <td align="left">BE27</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">FAN_ALERT_n</td>
+   <td align="left">BE26</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">POWER_MONITOR_I2C_SCL</td>
+   <td align="left">F24</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">POWER_MONITOR_I2C_SDA</td>
+   <td align="left">F22</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">POWER_MONITOR_ALERT_n</td>
+   <td align="left">E24</td>
+   <td align="left">input</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">TEMP_I2C_SCL</td>
+   <td align="left">E22</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">TEMP_I2C_SDA</td>
+   <td align="left">E23</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">LTM4677_SCL_IO</td>
+   <td align="left">BF26</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">LTM4677_SDA_IO</td>
+   <td align="left">BG27</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+</table>
+<h2><a name="GPIO"></a></h2><table border="3">
+<caption>GPIO</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">GPIO_CLK[0]</td>
+   <td align="left">BA27</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">GPIO_CLK[1]</td>
+   <td align="left">BA26</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">GPIO_P[0]</td>
+   <td align="left">BB25</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">GPIO_P[1]</td>
+   <td align="left">BC26</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">GPIO_P[2]</td>
+   <td align="left">BC25</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">GPIO_P[3]</td>
+   <td align="left">BA25</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+</table>
+<h2><a name="PCIE"></a></h2><table border="3">
+<caption>PCIE</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">PCIE_SMBCLK</td>
+   <td align="left">BA39</td>
+   <td align="left">inout</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">PCIE_SMBDAT</td>
+   <td align="left">BF40</td>
+   <td align="left">inout</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">PCIE_REFCLK_p</td>
+   <td align="left">AM41</td>
+   <td align="left">input</td>
+   <td align="left">HCSL</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[0]</td>
+   <td align="left">BJ46</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[1]</td>
+   <td align="left">BF45</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[2]</td>
+   <td align="left">BG47</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[3]</td>
+   <td align="left">BE47</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[4]</td>
+   <td align="left">BF49</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[5]</td>
+   <td align="left">BC47</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[6]</td>
+   <td align="left">BD49</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[7]</td>
+   <td align="left">BA47</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[8]</td>
+   <td align="left">BB49</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[9]</td>
+   <td align="left">AW47</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[10]</td>
+   <td align="left">AY49</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[11]</td>
+   <td align="left">AU47</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[12]</td>
+   <td align="left">AV49</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[13]</td>
+   <td align="left">AR47</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[14]</td>
+   <td align="left">AT49</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_TX_p[15]</td>
+   <td align="left">AP49</td>
+   <td align="left">output</td>
+   <td align="left">HIGH SPEED DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[0]</td>
+   <td align="left">BH41</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[1]</td>
+   <td align="left">BJ43</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[2]</td>
+   <td align="left">BG43</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[3]</td>
+   <td align="left">BE43</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[4]</td>
+   <td align="left">BC43</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[5]</td>
+   <td align="left">BD45</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[6]</td>
+   <td align="left">BA43</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[7]</td>
+   <td align="left">BB45</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[8]</td>
+   <td align="left">AW43</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[9]</td>
+   <td align="left">AY45</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[10]</td>
+   <td align="left">AU43</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[11]</td>
+   <td align="left">AV45</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[12]</td>
+   <td align="left">AR43</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[13]</td>
+   <td align="left">AT45</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[14]</td>
+   <td align="left">AP45</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_RX_p[15]</td>
+   <td align="left">AN43</td>
+   <td align="left">input</td>
+   <td align="left">CURRENT MODE LOGIC (CML)</td>
+</tr>
+<tr>
+   <td align="left">PCIE_PERST_n</td>
+   <td align="left">AJ34</td>
+   <td align="left">input</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">PCIE_WAKE_n</td>
+   <td align="left">BC33</td>
+   <td align="left">output</td>
+   <td align="left">1.2 V</td>
+</tr>
+</table>
+<h2><a name="QSFP28A"></a></h2><table border="3">
+<caption>QSFP28A</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">QSFP28A_REFCLK_p</td>
+   <td align="left">T41</td>
+   <td align="left">input</td>
+   <td align="left">LVDS</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_TX_p[0]</td>
+   <td align="left">F49</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_TX_p[1]</td>
+   <td align="left">G47</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_TX_p[2]</td>
+   <td align="left">E47</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_TX_p[3]</td>
+   <td align="left">C47</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_RX_p[0]</td>
+   <td align="left">G43</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_RX_p[1]</td>
+   <td align="left">D45</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_RX_p[2]</td>
+   <td align="left">C43</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_RX_p[3]</td>
+   <td align="left">A43</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_INTERRUPT_n</td>
+   <td align="left">AB35</td>
+   <td align="left">input</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_LP_MODE</td>
+   <td align="left">AB36</td>
+   <td align="left">output</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_MOD_PRS_n</td>
+   <td align="left">AB34</td>
+   <td align="left">output</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_MOD_SEL_n</td>
+   <td align="left">AD35</td>
+   <td align="left">output</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_RST_n</td>
+   <td align="left">AC33</td>
+   <td align="left">input</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_SCL</td>
+   <td align="left">AC36</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28A_SDA</td>
+   <td align="left">AC35</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+</table>
+<h2><a name="QSFP28B"></a></h2><table border="3">
+<caption>QSFP28B</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">QSFP28B_REFCLK_p</td>
+   <td align="left">AM38</td>
+   <td align="left">input</td>
+   <td align="left">LVDS</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_TX_p[0]</td>
+   <td align="left">AK49</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_TX_p[1]</td>
+   <td align="left">AL47</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_TX_p[2]</td>
+   <td align="left">AJ47</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_TX_p[3]</td>
+   <td align="left">AF49</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_RX_p[0]</td>
+   <td align="left">AL43</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_RX_p[1]</td>
+   <td align="left">AH45</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_RX_p[2]</td>
+   <td align="left">AF45</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_RX_p[3]</td>
+   <td align="left">AG43</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_INTERRUPT_n</td>
+   <td align="left">AF17</td>
+   <td align="left">input</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_LP_MODE</td>
+   <td align="left">AF34</td>
+   <td align="left">output</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_MOD_PRS_n</td>
+   <td align="left">AH17</td>
+   <td align="left">output</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_MOD_SEL_n</td>
+   <td align="left">AJ33</td>
+   <td align="left">output</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_RST_n</td>
+   <td align="left">AG34</td>
+   <td align="left">input</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_SCL</td>
+   <td align="left">AH32</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28B_SDA</td>
+   <td align="left">AE36</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+</table>
+<h2><a name="QSFP28C"></a></h2><table border="3">
+<caption>QSFP28C</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">QSFP28C_REFCLK_p</td>
+   <td align="left">AM12</td>
+   <td align="left">input</td>
+   <td align="left">LVDS</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_TX_p[0]</td>
+   <td align="left">AK1</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_TX_p[1]</td>
+   <td align="left">AL3</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_TX_p[2]</td>
+   <td align="left">AJ3</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_TX_p[3]</td>
+   <td align="left">AF1</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_RX_p[0]</td>
+   <td align="left">AL7</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_RX_p[1]</td>
+   <td align="left">AH5</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_RX_p[2]</td>
+   <td align="left">AF5</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_RX_p[3]</td>
+   <td align="left">AG7</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_INTERRUPT_n</td>
+   <td align="left">AF16</td>
+   <td align="left">input</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_LP_MODE</td>
+   <td align="left">AE16</td>
+   <td align="left">output</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_MOD_PRS_n</td>
+   <td align="left">AH16</td>
+   <td align="left">output</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_MOD_SEL_n</td>
+   <td align="left">AE14</td>
+   <td align="left">output</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_RST_n</td>
+   <td align="left">AD15</td>
+   <td align="left">input</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_SCL</td>
+   <td align="left">AD16</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28C_SDA</td>
+   <td align="left">AF15</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+</table>
+<h2><a name="QSFP28D"></a></h2><table border="3">
+<caption>QSFP28D</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">QSFP28D_REFCLK_p</td>
+   <td align="left">T9</td>
+   <td align="left">input</td>
+   <td align="left">LVDS</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_TX_p[0]</td>
+   <td align="left">F1</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_TX_p[1]</td>
+   <td align="left">G3</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_TX_p[2]</td>
+   <td align="left">E3</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_TX_p[3]</td>
+   <td align="left">C3</td>
+   <td align="left">output</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_RX_p[0]</td>
+   <td align="left">G7</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_RX_p[1]</td>
+   <td align="left">D5</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_RX_p[2]</td>
+   <td align="left">C7</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_RX_p[3]</td>
+   <td align="left">A7</td>
+   <td align="left">input</td>
+   <td align="left">HSSI DIFFERENTIAL I/O</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_INTERRUPT_n</td>
+   <td align="left">AD14</td>
+   <td align="left">input</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_LP_MODE</td>
+   <td align="left">AB15</td>
+   <td align="left">output</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_MOD_PRS_n</td>
+   <td align="left">AC15</td>
+   <td align="left">output</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_MOD_SEL_n</td>
+   <td align="left">AB12</td>
+   <td align="left">output</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_RST_n</td>
+   <td align="left">AB13</td>
+   <td align="left">input</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_SCL</td>
+   <td align="left">AB14</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">QSFP28D_SDA</td>
+   <td align="left">AC14</td>
+   <td align="left">inout</td>
+   <td align="left">3.0-V LVTTL</td>
+</tr>
+</table>
+<h2><a name="HPS"></a></h2><table border="3">
+<caption>HPS</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">HPS_EMAC0_RXD[0]</td>
+   <td align="left">B34</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_EMAC0_RXD[1]</td>
+   <td align="left">E31</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_EMAC0_RXD[2]</td>
+   <td align="left">G29</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_EMAC0_RXD[3]</td>
+   <td align="left">H28</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_EMAC0_RX_CLK</td>
+   <td align="left">G28</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_EMAC0_RX_CTL</td>
+   <td align="left">F30</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_EMAC0_TXD[0]</td>
+   <td align="left">J28</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_EMAC0_TXD[1]</td>
+   <td align="left">E28</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_EMAC0_TXD[2]</td>
+   <td align="left">P29</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_EMAC0_TXD[3]</td>
+   <td align="left">B32</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_EMAC0_TX_CLK</td>
+   <td align="left">F31</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_EMAC0_TX_CTL</td>
+   <td align="left">R29</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_KEY</td>
+   <td align="left">C28</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_LED</td>
+   <td align="left">G30</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_SDMMC_CCLK</td>
+   <td align="left">E29</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_SDMMC_CMD</td>
+   <td align="left">C33</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_SDMMC_DATA[0]</td>
+   <td align="left">D30</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_SDMMC_DATA[1]</td>
+   <td align="left">A30</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_SDMMC_DATA[2]</td>
+   <td align="left">C32</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_SDMMC_DATA[3]</td>
+   <td align="left">A27</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_SDMMC_DATA[4]</td>
+   <td align="left">A29</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_SDMMC_DATA[5]</td>
+   <td align="left">E33</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_SDMMC_DATA[6]</td>
+   <td align="left">F29</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_SDMMC_DATA[7]</td>
+   <td align="left">E32</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_SDMMC_PWR_EN</td>
+   <td align="left">B30</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_UART0_RX</td>
+   <td align="left">K29</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">HPS_UART0_TX</td>
+   <td align="left">F32</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+</table>
+<h2><a name="M5S10"></a></h2><table border="3">
+<caption>M5S10</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">M5S10_R[0]</td>
+   <td align="left">B17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">M5S10_R[1]</td>
+   <td align="left">E21</td>
+   <td align="left">inout</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">M5S10_R[2]</td>
+   <td align="left">R16</td>
+   <td align="left">inout</td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">M5S10_R[3]</td>
+   <td align="left">N17</td>
+   <td align="left">inout</td>
+   <td align="left">1.2 V</td>
+</tr>
+</table>
+<h2><a name="UFL"></a></h2><table border="3">
+<caption>UFL</caption>
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">IO Standard</th>
+</tr>
+<tr>
+   <td align="left">UFL_CLKIN_p</td>
+   <td align="left">AN27</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+<tr>
+   <td align="left">UFL_CLKIN_n</td>
+   <td align="left">AN28</td>
+   <td align="left">inout</td>
+   <td align="left">1.8 V</td>
+</tr>
+</table>
+<br>
+</br>
+</html>
+</body>
