@@ -27,7 +27,7 @@ main = do
         }
   writeVerilogModule (makeScalarCore config) "pebbles_core" "./"
   -- Generate code for a chain of scalar cores
-  writeVerilogModule (makeScalarCoreChain 10) "Pebbles" "./"
+  writeVerilogModule (makeScalarCoreChain 400) "Pebbles" "./"
 
 -- Helper code
 -- ===========
