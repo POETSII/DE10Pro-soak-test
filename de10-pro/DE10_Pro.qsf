@@ -1748,3 +1748,4 @@ set_global_assignment -name VERILOG_FILE ../pebbles/blarney/Verilog/Altera/Block
 set_global_assignment -name IP_FILE ip/DE10_Pro_QSYS/DE10_Pro_QSYS_Pebbles_0.ip
 set_global_assignment -name IP_FILE ip/DE10_Pro_QSYS/DE10_Pro_QSYS_jtag_uart_1.ip
 set_global_assignment -name IP_FILE reset_release.ip
+set_global_assignment -name IP_FILE ip/DE10_Pro_QSYS/DE10_Pro_QSYS_alt_e100s10_0.ip
