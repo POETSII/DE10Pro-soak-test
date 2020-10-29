@@ -1,3 +1,6 @@
 [submodule "pebbles/blarney"]
 	path = pebbles/blarney
 	url = https://github.com/blarney-lang/blarney
+[submodule "temperature/DE10-I2C-devices"]
+	path = temperature/DE10-I2C-devices
+	url = https://github.com/POETSII/DE10-I2C-devices

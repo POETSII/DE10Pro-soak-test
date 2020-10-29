@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <ipxact:component xmlns:altera="http://www.altera.com/XMLSchema/IPXact2014/extensions" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014">
   <ipxact:vendor>Intel Corporation</ipxact:vendor>
-  <ipxact:library>DE10_Pro_QSYS_pio_0</ipxact:library>
-  <ipxact:name>pio_0</ipxact:name>
+  <ipxact:library>DE10_Pro_QSYS_pio_1</ipxact:library>
+  <ipxact:name>pio_1</ipxact:name>
   <ipxact:version>19.1</ipxact:version>
   <ipxact:busInterfaces>
     <ipxact:busInterface>
@@ -457,7 +457,7 @@
           <ipxact:vectors>
             <ipxact:vector>
               <ipxact:left>0</ipxact:left>
-              <ipxact:right>11</ipxact:right>
+              <ipxact:right>7</ipxact:right>
             </ipxact:vector>
           </ipxact:vectors>
           <ipxact:wireTypeDefs>
@@ -473,7 +473,7 @@
   <ipxact:vendorExtensions>
     <altera:entity_info>
       <ipxact:vendor>Intel Corporation</ipxact:vendor>
-      <ipxact:library>DE10_Pro_QSYS_pio_0</ipxact:library>
+      <ipxact:library>DE10_Pro_QSYS_pio_1</ipxact:library>
       <ipxact:name>altera_avalon_pio</ipxact:name>
       <ipxact:version>19.1</ipxact:version>
     </altera:entity_info>
@@ -532,7 +532,7 @@
         <ipxact:parameter parameterId="width" type="int">
           <ipxact:name>width</ipxact:name>
           <ipxact:displayName>Width (1-32 bits)</ipxact:displayName>
-          <ipxact:value>12</ipxact:value>
+          <ipxact:value>8</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="clockRate" type="longint">
           <ipxact:name>clockRate</ipxact:name>
@@ -597,7 +597,7 @@
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.CMacro.DATA_WIDTH" type="string">
           <ipxact:name>embeddedsw.CMacro.DATA_WIDTH</ipxact:name>
-          <ipxact:value>12</ipxact:value>
+          <ipxact:value>8</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.CMacro.DO_TEST_BENCH_WIRING" type="string">
           <ipxact:name>embeddedsw.CMacro.DO_TEST_BENCH_WIRING</ipxact:name>
@@ -649,7 +649,7 @@
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.dts.params.altr,gpio-bank-width" type="string">
           <ipxact:name>embeddedsw.dts.params.altr,gpio-bank-width</ipxact:name>
-          <ipxact:value>12</ipxact:value>
+          <ipxact:value>8</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.dts.params.resetvalue" type="string">
           <ipxact:name>embeddedsw.dts.params.resetvalue</ipxact:name>
@@ -696,7 +696,7 @@
          type = "String";
       }
    }
-   element pio_0
+   element pio_1
    {
    }
 }
@@ -1121,7 +1121,7 @@
                     &lt;name&gt;in_port&lt;/name&gt;
                     &lt;role&gt;export&lt;/role&gt;
                     &lt;direction&gt;Input&lt;/direction&gt;
-                    &lt;width&gt;12&lt;/width&gt;
+                    &lt;width&gt;8&lt;/width&gt;
                     &lt;lowerBound&gt;0&lt;/lowerBound&gt;
                     &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
                 &lt;/port&gt;
@@ -1192,16 +1192,16 @@
       </ipxact:parameters>
     </altera:altera_system_parameters>
     <altera:altera_interface_boundary>
-      <altera:interface_mapping altera:name="clk" altera:internal="pio_0.clk" altera:type="clock" altera:dir="end">
+      <altera:interface_mapping altera:name="clk" altera:internal="pio_1.clk" altera:type="clock" altera:dir="end">
         <altera:port_mapping altera:name="clk" altera:internal="clk"></altera:port_mapping>
       </altera:interface_mapping>
-      <altera:interface_mapping altera:name="external_connection" altera:internal="pio_0.external_connection" altera:type="conduit" altera:dir="end">
+      <altera:interface_mapping altera:name="external_connection" altera:internal="pio_1.external_connection" altera:type="conduit" altera:dir="end">
         <altera:port_mapping altera:name="in_port" altera:internal="in_port"></altera:port_mapping>
       </altera:interface_mapping>
-      <altera:interface_mapping altera:name="reset" altera:internal="pio_0.reset" altera:type="reset" altera:dir="end">
+      <altera:interface_mapping altera:name="reset" altera:internal="pio_1.reset" altera:type="reset" altera:dir="end">
         <altera:port_mapping altera:name="reset_n" altera:internal="reset_n"></altera:port_mapping>
       </altera:interface_mapping>
-      <altera:interface_mapping altera:name="s1" altera:internal="pio_0.s1" altera:type="avalon" altera:dir="end">
+      <altera:interface_mapping altera:name="s1" altera:internal="pio_1.s1" altera:type="avalon" altera:dir="end">
         <altera:port_mapping altera:name="address" altera:internal="address"></altera:port_mapping>
         <altera:port_mapping altera:name="readdata" altera:internal="readdata"></altera:port_mapping>
       </altera:interface_mapping>

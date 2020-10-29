@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'DE10_Pro_QSYS'
  * SOPC Builder design path: ../../DE10_Pro_QSYS/DE10_Pro_QSYS.sopcinfo
  *
- * Generated: Mon May 21 13:23:01 CST 2018
+ * Generated: Thu Oct 29 15:51:12 UTC 2020
  */
 
 /*
@@ -385,6 +385,33 @@
 #define SYSID_QSYS_0_SPAN 8
 #define SYSID_QSYS_0_TIMESTAMP 0
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
+
+
+/*
+ * temp_pio configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_temp_pio altera_avalon_pio
+#define TEMP_PIO_BASE 0x40081060
+#define TEMP_PIO_BIT_CLEARING_EDGE_REGISTER 0
+#define TEMP_PIO_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define TEMP_PIO_CAPTURE 0
+#define TEMP_PIO_DATA_WIDTH 8
+#define TEMP_PIO_DO_TEST_BENCH_WIRING 0
+#define TEMP_PIO_DRIVEN_SIM_VALUE 0
+#define TEMP_PIO_EDGE_TYPE "NONE"
+#define TEMP_PIO_FREQ 50000000
+#define TEMP_PIO_HAS_IN 1
+#define TEMP_PIO_HAS_OUT 0
+#define TEMP_PIO_HAS_TRI 0
+#define TEMP_PIO_IRQ -1
+#define TEMP_PIO_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define TEMP_PIO_IRQ_TYPE "NONE"
+#define TEMP_PIO_NAME "/dev/temp_pio"
+#define TEMP_PIO_RESET_VALUE 0
+#define TEMP_PIO_SPAN 16
+#define TEMP_PIO_TYPE "altera_avalon_pio"
 
 
 /*

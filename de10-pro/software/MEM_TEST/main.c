@@ -84,8 +84,12 @@ int main(void){
         }
     }
 */
+
     while (1) {
-      // For the soak test, let's run forever
+      volatile int* temp_addr_low = (int*) TEMP_PIO_BASE;
+      volatile int* temp_addr_high = (int*) (TEMP_PIO_BASE+4);
+      printf("%i\n", *temp_addr_low);
+      printf("%i\n", *temp_addr_high);
       TEST_DDR4();
     }
 
