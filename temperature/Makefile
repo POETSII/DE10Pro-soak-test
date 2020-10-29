@@ -6,5 +6,4 @@ verilog:
 
 .PHONY: clean
 clean:
-	rm -f mkTempReader.v
 	rm -f DE10-I2C-devices/*.bo
