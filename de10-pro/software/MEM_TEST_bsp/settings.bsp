@@ -2,8 +2,8 @@
 <ns2:Settings xmlns:ns2="http://www.altera.com/embeddedsw/bsp/schema">
     <BspType>hal</BspType>
     <BspVersion>default</BspVersion>
-    <BspGeneratedTimeStamp>Oct 29, 2020 8:17:45 AM</BspGeneratedTimeStamp>
-    <BspGeneratedUnixTimeStamp>1603959465379</BspGeneratedUnixTimeStamp>
+    <BspGeneratedTimeStamp>Oct 29, 2020 9:48:39 AM</BspGeneratedTimeStamp>
+    <BspGeneratedUnixTimeStamp>1603964919923</BspGeneratedUnixTimeStamp>
     <BspGeneratedLocation>./</BspGeneratedLocation>
     <BspSettingsFile>MEM_TEST_bsp/settings.bsp</BspSettingsFile>
     <SopcDesignFile>../../DE10_Pro_QSYS/DE10_Pro_QSYS.sopcinfo</SopcDesignFile>

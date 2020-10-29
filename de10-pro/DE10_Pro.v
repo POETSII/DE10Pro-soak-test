@@ -37,9 +37,9 @@
 `define ENABLE_DDR4D
 //`define ENABLE_PCIE
 `define ENABLE_QSFP28A
-//`define ENABLE_QSFP28B
-//`define ENABLE_QSFP28C
-//`define ENABLE_QSFP28D
+`define ENABLE_QSFP28B
+`define ENABLE_QSFP28C
+`define ENABLE_QSFP28D
 //`define ENABLE_HPS
 
 module DE10_Pro(
@@ -353,32 +353,104 @@ reset_release reset_release (
         .ninit_done(ninit_done)
         );
 
-// 100G MAC
-wire txClock;
-wire rxClock;
-wire txReady;
-wire rxValid;
-wire serial_clk_1;
-wire pll_locked_1;
-wire serial_clk_2;
-wire pll_locked_2;
-wire [1:0] pll_locked;
-
-atx_pll_s100 atx1 (
+// 100G MAC A
+wire txClockA;
+wire rxClockA;
+wire txReadyA;
+wire rxValidA;
+wire serial_clkA_1;
+wire pll_lockedA_1;
+wire serial_clkA_2;
+wire pll_lockedA_2;
+wire [1:0] pll_lockedA;
+atx_pll_s100 atx1A (
   .pll_refclk0(QSFP28A_REFCLK_p),
-  .tx_serial_clk_gxt(serial_clk_1),
-  .pll_locked(pll_locked_1),
+  .tx_serial_clk_gxt(serial_clkA_1),
+  .pll_locked(pll_lockedA_1),
   .pll_cal_busy()
 );
-
-atx_pll_s100 atx2 (
+atx_pll_s100 atx2A (
   .pll_refclk0(QSFP28A_REFCLK_p),
-  .tx_serial_clk_gxt(serial_clk_2),
-  .pll_locked(pll_locked_2),
+  .tx_serial_clk_gxt(serial_clkA_2),
+  .pll_locked(pll_lockedA_2),
   .pll_cal_busy()
 );
+assign pll_lockedA = {pll_lockedA_1, pll_lockedA_2};
 
-assign pll_locked = {pll_locked_1, pll_locked_2};
+// 100G MAC B
+wire txClockB;
+wire rxClockB;
+wire txReadyB;
+wire rxValidB;
+wire serial_clkB_1;
+wire pll_lockedB_1;
+wire serial_clkB_2;
+wire pll_lockedB_2;
+wire [1:0] pll_lockedB;
+atx_pll_s100 atx1B (
+  .pll_refclk0(QSFP28B_REFCLK_p),
+  .tx_serial_clk_gxt(serial_clkB_1),
+  .pll_locked(pll_lockedB_1),
+  .pll_cal_busy()
+);
+atx_pll_s100 atx2B (
+  .pll_refclk0(QSFP28B_REFCLK_p),
+  .tx_serial_clk_gxt(serial_clkB_2),
+  .pll_locked(pll_lockedB_2),
+  .pll_cal_busy()
+);
+assign pll_lockedB = {pll_lockedB_1, pll_lockedB_2};
+
+// 100G MAC C
+wire txClockC;
+wire rxClockC;
+wire txReadyC;
+wire rxValidC;
+wire serial_clkC_1;
+wire pll_lockedC_1;
+wire serial_clkC_2;
+wire pll_lockedC_2;
+wire [1:0] pll_lockedC;
+atx_pll_s100 atx1C (
+  .pll_refclk0(QSFP28C_REFCLK_p),
+  .tx_serial_clk_gxt(serial_clkC_1),
+  .pll_locked(pll_lockedC_1),
+  .pll_cal_busy()
+);
+atx_pll_s100 atx2C (
+  .pll_refclk0(QSFP28C_REFCLK_p),
+  .tx_serial_clk_gxt(serial_clkC_2),
+  .pll_locked(pll_lockedC_2),
+  .pll_cal_busy()
+);
+assign pll_lockedC = {pll_lockedC_1, pll_lockedC_2};
+
+// 100G MAC D
+wire txClockD;
+wire rxClockD;
+wire txReadyD;
+wire rxValidD;
+wire serial_clkD_1;
+wire pll_lockedD_1;
+wire serial_clkD_2;
+wire pll_lockedD_2;
+wire [1:0] pll_lockedD;
+atx_pll_s100 atx1D (
+  .pll_refclk0(QSFP28D_REFCLK_p),
+  .tx_serial_clk_gxt(serial_clkD_1),
+  .pll_locked(pll_lockedD_1),
+  .pll_cal_busy()
+);
+atx_pll_s100 atx2D (
+  .pll_refclk0(QSFP28D_REFCLK_p),
+  .tx_serial_clk_gxt(serial_clkD_2),
+  .pll_locked(pll_lockedD_2),
+  .pll_cal_busy()
+);
+assign pll_lockedD = {pll_lockedD_1, pll_lockedD_2};
+
+
+
 
 //=======================================================
 //  Structural coding
@@ -506,16 +578,16 @@ DE10_Pro_QSYS DE10_Pro_QSYS_inst (
         .alt_e100s10_0_status_status_read                    (0),                                                                  //   input,    width = 1,
         .alt_e100s10_0_status_status_addr                    (0),                                                                  //   input,   width = 16,
         .alt_e100s10_0_status_status_writedata               (0),                                                                  //   input,   width = 32,
-        .alt_e100s10_0_avalon_st_tx_clk_txmac                (txClock),                                                            //  output,    width = 1,
+        .alt_e100s10_0_avalon_st_tx_clk_txmac                (txClockA),                                                           //  output,    width = 1,
         .alt_e100s10_0_avalon_st_tx_l8_tx_startofpacket      (1),                                                                  //   input,    width = 1,
         .alt_e100s10_0_avalon_st_tx_l8_tx_endofpacket        (1),                                                                  //   input,    width = 1,
         .alt_e100s10_0_avalon_st_tx_l8_tx_valid              (1),                                                                  //   input,    width = 1,
-        .alt_e100s10_0_avalon_st_tx_l8_tx_ready              (txReady),                                                            //  output,    width = 1,
+        .alt_e100s10_0_avalon_st_tx_l8_tx_ready              (txReadyA),                                                           //  output,    width = 1,
         .alt_e100s10_0_avalon_st_tx_l8_tx_error              (0),                                                                  //   input,    width = 1,
         .alt_e100s10_0_avalon_st_tx_l8_tx_empty              (0),                                                                  //   input,    width = 6,
         .alt_e100s10_0_avalon_st_tx_l8_tx_data               (0),                                                                  //   input,  width = 512,
-        .alt_e100s10_0_avalon_st_rx_clk_rxmac                (rxClock),                                                            //  output,    width = 1,
-        .alt_e100s10_0_avalon_st_rx_l8_rx_valid              (rxValid),                                                            //  output,    width = 1,
+        .alt_e100s10_0_avalon_st_rx_clk_rxmac                (rxClockA),                                                           //  output,    width = 1,
+        .alt_e100s10_0_avalon_st_rx_l8_rx_valid              (rxValidA),                                                           //  output,    width = 1,
         .alt_e100s10_0_serial_lanes_tx_serial                (QSFP28A_TX_p),                                                       //  output,    width = 4,
         .alt_e100s10_0_serial_lanes_rx_serial                (QSFP28A_RX_p),                                                       //   input,    width = 4,
         .alt_e100s10_0_reconfig_reconfig_clk                 (CLK_50_B3I),                                                         //   input,    width = 1,
@@ -528,8 +600,99 @@ DE10_Pro_QSYS DE10_Pro_QSYS_inst (
         .alt_e100s10_0_other_csr_rst_n                       (reset_n),                                                            //   input,    width = 1,
         .alt_e100s10_0_other_tx_rst_n                        (reset_n),                                                            //   input,    width = 1,
         .alt_e100s10_0_other_rx_rst_n                        (reset_n),                                                            //   input,    width = 1,
-        .alt_e100s10_0_other_tx_serial_clk                   ({serial_clk_1, serial_clk_2}),                                       //   input,    width = 2,
-        .alt_e100s10_0_other_tx_pll_locked                   (pll_locked)                                                          //   input,    width = 2,
+        .alt_e100s10_0_other_tx_serial_clk                   ({serial_clkA_1, serial_clkA_2}),                                     //   input,    width = 2,
+        .alt_e100s10_0_other_tx_pll_locked                   (pll_lockedA),                                                        //   input,    width = 2,
+
+        .alt_e100s10_1_status_clk_status                     (CLK_50_B3I),                                                         //   input,    width = 1,
+        .alt_e100s10_1_status_status_write                   (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_1_status_status_read                    (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_1_status_status_addr                    (0),                                                                  //   input,   width = 16,
+        .alt_e100s10_1_status_status_writedata               (0),                                                                  //   input,   width = 32,
+        .alt_e100s10_1_avalon_st_tx_clk_txmac                (txClockB),                                                           //  output,    width = 1,
+        .alt_e100s10_1_avalon_st_tx_l8_tx_startofpacket      (1),                                                                  //   input,    width = 1,
+        .alt_e100s10_1_avalon_st_tx_l8_tx_endofpacket        (1),                                                                  //   input,    width = 1,
+        .alt_e100s10_1_avalon_st_tx_l8_tx_valid              (1),                                                                  //   input,    width = 1,
+        .alt_e100s10_1_avalon_st_tx_l8_tx_ready              (txReadyB),                                                           //  output,    width = 1,
+        .alt_e100s10_1_avalon_st_tx_l8_tx_error              (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_1_avalon_st_tx_l8_tx_empty              (0),                                                                  //   input,    width = 6,
+        .alt_e100s10_1_avalon_st_tx_l8_tx_data               (0),                                                                  //   input,  width = 512,
+        .alt_e100s10_1_avalon_st_rx_clk_rxmac                (rxClockB),                                                           //  output,    width = 1,
+        .alt_e100s10_1_avalon_st_rx_l8_rx_valid              (rxValidB),                                                           //  output,    width = 1,
+        .alt_e100s10_1_serial_lanes_tx_serial                (QSFP28B_TX_p),                                                       //  output,    width = 4,
+        .alt_e100s10_1_serial_lanes_rx_serial                (QSFP28B_RX_p),                                                       //   input,    width = 4,
+        .alt_e100s10_1_reconfig_reconfig_clk                 (CLK_50_B3I),                                                         //   input,    width = 1,
+        .alt_e100s10_1_reconfig_reconfig_reset               (~reset_n),                                                           //   input,    width = 1,
+        .alt_e100s10_1_reconfig_reconfig_write               (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_1_reconfig_reconfig_read                (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_1_reconfig_reconfig_address             (0),                                                                  //   input,   width = 13,
+        .alt_e100s10_1_reconfig_reconfig_writedata           (0),                                                                  //   input,   width = 32,
+        .alt_e100s10_1_other_clk_ref                         (QSFP28B_REFCLK_p),                                                   //   input,    width = 1,
+        .alt_e100s10_1_other_csr_rst_n                       (reset_n),                                                            //   input,    width = 1,
+        .alt_e100s10_1_other_tx_rst_n                        (reset_n),                                                            //   input,    width = 1,
+        .alt_e100s10_1_other_rx_rst_n                        (reset_n),                                                            //   input,    width = 1,
+        .alt_e100s10_1_other_tx_serial_clk                   ({serial_clkB_1, serial_clkB_2}),                                     //   input,    width = 2,
+        .alt_e100s10_1_other_tx_pll_locked                   (pll_lockedB),                                                        //   input,    width = 2,
+
+        .alt_e100s10_2_status_clk_status                     (CLK_50_B3I),                                                         //   input,    width = 1,
+        .alt_e100s10_2_status_status_write                   (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_2_status_status_read                    (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_2_status_status_addr                    (0),                                                                  //   input,   width = 16,
+        .alt_e100s10_2_status_status_writedata               (0),                                                                  //   input,   width = 32,
+        .alt_e100s10_2_avalon_st_tx_clk_txmac                (txClockC),                                                           //  output,    width = 1,
+        .alt_e100s10_2_avalon_st_tx_l8_tx_startofpacket      (1),                                                                  //   input,    width = 1,
+        .alt_e100s10_2_avalon_st_tx_l8_tx_endofpacket        (1),                                                                  //   input,    width = 1,
+        .alt_e100s10_2_avalon_st_tx_l8_tx_valid              (1),                                                                  //   input,    width = 1,
+        .alt_e100s10_2_avalon_st_tx_l8_tx_ready              (txReadyC),                                                           //  output,    width = 1,
+        .alt_e100s10_2_avalon_st_tx_l8_tx_error              (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_2_avalon_st_tx_l8_tx_empty              (0),                                                                  //   input,    width = 6,
+        .alt_e100s10_2_avalon_st_tx_l8_tx_data               (0),                                                                  //   input,  width = 512,
+        .alt_e100s10_2_avalon_st_rx_clk_rxmac                (rxClockC),                                                           //  output,    width = 1,
+        .alt_e100s10_2_avalon_st_rx_l8_rx_valid              (rxValidC),                                                           //  output,    width = 1,
+        .alt_e100s10_2_serial_lanes_tx_serial                (QSFP28C_TX_p),                                                       //  output,    width = 4,
+        .alt_e100s10_2_serial_lanes_rx_serial                (QSFP28C_RX_p),                                                       //   input,    width = 4,
+        .alt_e100s10_2_reconfig_reconfig_clk                 (CLK_50_B3I),                                                         //   input,    width = 1,
+        .alt_e100s10_2_reconfig_reconfig_reset               (~reset_n),                                                           //   input,    width = 1,
+        .alt_e100s10_2_reconfig_reconfig_write               (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_2_reconfig_reconfig_read                (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_2_reconfig_reconfig_address             (0),                                                                  //   input,   width = 13,
+        .alt_e100s10_2_reconfig_reconfig_writedata           (0),                                                                  //   input,   width = 32,
+        .alt_e100s10_2_other_clk_ref                         (QSFP28C_REFCLK_p),                                                   //   input,    width = 1,
+        .alt_e100s10_2_other_csr_rst_n                       (reset_n),                                                            //   input,    width = 1,
+        .alt_e100s10_2_other_tx_rst_n                        (reset_n),                                                            //   input,    width = 1,
+        .alt_e100s10_2_other_rx_rst_n                        (reset_n),                                                            //   input,    width = 1,
+        .alt_e100s10_2_other_tx_serial_clk                   ({serial_clkC_1, serial_clkC_2}),                                     //   input,    width = 2,
+        .alt_e100s10_2_other_tx_pll_locked                   (pll_lockedC),                                                        //   input,    width = 2,
+
+        .alt_e100s10_3_status_clk_status                     (CLK_50_B3I),                                                         //   input,    width = 1,
+        .alt_e100s10_3_status_status_write                   (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_3_status_status_read                    (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_3_status_status_addr                    (0),                                                                  //   input,   width = 16,
+        .alt_e100s10_3_status_status_writedata               (0),                                                                  //   input,   width = 32,
+        .alt_e100s10_3_avalon_st_tx_clk_txmac                (txClockD),                                                           //  output,    width = 1,
+        .alt_e100s10_3_avalon_st_tx_l8_tx_startofpacket      (1),                                                                  //   input,    width = 1,
+        .alt_e100s10_3_avalon_st_tx_l8_tx_endofpacket        (1),                                                                  //   input,    width = 1,
+        .alt_e100s10_3_avalon_st_tx_l8_tx_valid              (1),                                                                  //   input,    width = 1,
+        .alt_e100s10_3_avalon_st_tx_l8_tx_ready              (txReadyD),                                                           //  output,    width = 1,
+        .alt_e100s10_3_avalon_st_tx_l8_tx_error              (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_3_avalon_st_tx_l8_tx_empty              (0),                                                                  //   input,    width = 6,
+        .alt_e100s10_3_avalon_st_tx_l8_tx_data               (0),                                                                  //   input,  width = 512,
+        .alt_e100s10_3_avalon_st_rx_clk_rxmac                (rxClockD),                                                           //  output,    width = 1,
+        .alt_e100s10_3_avalon_st_rx_l8_rx_valid              (rxValidD),                                                           //  output,    width = 1,
+        .alt_e100s10_3_serial_lanes_tx_serial                (QSFP28D_TX_p),                                                       //  output,    width = 4,
+        .alt_e100s10_3_serial_lanes_rx_serial                (QSFP28D_RX_p),                                                       //   input,    width = 4,
+        .alt_e100s10_3_reconfig_reconfig_clk                 (CLK_50_B3I),                                                         //   input,    width = 1,
+        .alt_e100s10_3_reconfig_reconfig_reset               (~reset_n),                                                           //   input,    width = 1,
+        .alt_e100s10_3_reconfig_reconfig_write               (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_3_reconfig_reconfig_read                (0),                                                                  //   input,    width = 1,
+        .alt_e100s10_3_reconfig_reconfig_address             (0),                                                                  //   input,   width = 13,
+        .alt_e100s10_3_reconfig_reconfig_writedata           (0),                                                                  //   input,   width = 32,
+        .alt_e100s10_3_other_clk_ref                         (QSFP28D_REFCLK_p),                                                   //   input,    width = 1,
+        .alt_e100s10_3_other_csr_rst_n                       (reset_n),                                                            //   input,    width = 1,
+        .alt_e100s10_3_other_tx_rst_n                        (reset_n),                                                            //   input,    width = 1,
+        .alt_e100s10_3_other_rx_rst_n                        (reset_n),                                                            //   input,    width = 1,
+        .alt_e100s10_3_other_tx_serial_clk                   ({serial_clkD_1, serial_clkD_2}),                                     //   input,    width = 2,
+        .alt_e100s10_3_other_tx_pll_locked                   (pll_lockedD)                                                         //   input,    width = 2,
+
 	);
 
 
@@ -539,8 +702,9 @@ DE10_Pro_QSYS DE10_Pro_QSYS_inst (
 heart_beat  heart_beat_2 ( .CLK(DDR4C_REFCLK_p ),     .CLK_FREQ  (300_000_000) , . CK_1HZ (LED[2]) );
 heart_beat  heart_beat_3 ( .CLK(DDR4D_REFCLK_p ),     .CLK_FREQ  (300_000_000) , . CK_1HZ (LED[3]) );
 
-assign LED[0] = rxValid;
-assign LED[1] = txReady;
+// Avoid 100G MAC stuff being optimised away
+assign LED[0] = rxValidA || rxValidB || rxValidC || rxValidD;
+assign LED[1] = txReadyA || txReadyB || txReadyC || txReadyD;
 
 
 
