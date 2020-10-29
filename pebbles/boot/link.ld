@@ -1,6 +1,6 @@
 OUTPUT_ARCH( "riscv" )
 
-__stackBase = 0x0000fffc ;
+__stackBase = 0x000003fc ;
 
 SECTIONS
 {
