@@ -69,11 +69,14 @@ int GUI_QueryUser(void){
 
 //===============================================================
 int main(void){
+    while (1) {
+      printf("%i\n", IORD(TEMP_PIO_BASE, 0x00));
+      usleep(1000000);
+    }
+/*
     int nChoice;
     int nNum;
     bool bPass;
-
-/*
     nNum = sizeof(szFuncList)/sizeof(szFuncList[0]);
     while(1){
     	GUI_ShowMenu();
@@ -84,11 +87,6 @@ int main(void){
         }
     }
 */
-    while (1) {
-      // For the soak test, let's run forever
-      TEST_DDR4();
-    }
-
 }
 
 
