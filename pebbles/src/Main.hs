@@ -11,7 +11,7 @@ import Pebbles.Core.Scalar
 makeScalarCoreInst :: Stream (Bit 8) -> Module (Stream (Bit 8))
 makeScalarCoreInst = makeInstance "pebbles_core"
 
--- Create chain of scalar cores
+-- Create tree of scalar cores
 makeScalarCoreChain :: Int -> Stream (Bit 8) -> Module (Stream (Bit 8))
 makeScalarCoreChain numCores inp = do
   uartOuts <- replicateM numCores (makeScalarCoreInst nullStream)
@@ -26,8 +26,9 @@ main = do
         , scalarCoreDataMemInitFile  = Just "data.mif"
         }
   writeVerilogModule (makeScalarCore config) "pebbles_core" "./"
-  -- Generate code for a chain of scalar cores
-  writeVerilogModule (makeScalarCoreChain 400) "Pebbles" "./"
+  -- Generate code for a tree of scalar cores
+  let numCores = 1
+  writeVerilogModule (makeScalarCoreChain numCores) "Pebbles" "./"
 
 -- Helper code
 -- ===========
@@ -38,13 +39,14 @@ mergeTwoStreams s0 s1 = do
   queue <- makeShiftQueue 1
 
   always do
-    when (s0.canPeek) do
-      s0.consume
-      enq queue (s0.peek)
+    when (queue.notFull) do
+      when (s0.canPeek) do
+        s0.consume
+        enq queue (s0.peek)
 
-    when (s0.canPeek.inv .&. s1.canPeek) do
-      s1.consume
-      enq queue (s1.peek)
+      when (s0.canPeek.inv .&. s1.canPeek) do
+        s1.consume
+        enq queue (s1.peek)
 
   return (queue.toStream)
 
