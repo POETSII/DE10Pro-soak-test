@@ -23,8 +23,8 @@ CFILES = main.c io.c
 OFILES = $(patsubst %.c,%.o,$(CFILES))
 
 # Sizes of instruction and data memories
-INSTR_BYTES = 1024
-DATA_BYTES  = 1024
+INSTR_BYTES = 4096
+DATA_BYTES  = 4096
 
 .PHONY: all
 all: $(QP)/prog.mif \
