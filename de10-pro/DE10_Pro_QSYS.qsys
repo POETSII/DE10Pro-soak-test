@@ -17966,6 +17966,78 @@
     <boundary>
         <interfaces>
             <interface>
+                <name>reset</name>
+                <type>reset</type>
+                <isStart>false</isStart>
+                <ports>
+                    <port>
+                        <name>rst</name>
+                        <role>reset</role>
+                        <direction>Input</direction>
+                        <width>1</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC</vhdlType>
+                    </port>
+                </ports>
+                <assignments>
+                    <assignmentValueMap>
+                        <entry>
+                            <key>ui.blockdiagram.direction</key>
+                            <value>input</value>
+                        </entry>
+                    </assignmentValueMap>
+                </assignments>
+                <parameters>
+                    <parameterValueMap>
+                        <entry>
+                            <key>associatedClock</key>
+                        </entry>
+                        <entry>
+                            <key>synchronousEdges</key>
+                            <value>NONE</value>
+                        </entry>
+                    </parameterValueMap>
+                </parameters>
+            </interface>
+            <interface>
+                <name>refclk</name>
+                <type>clock</type>
+                <isStart>false</isStart>
+                <ports>
+                    <port>
+                        <name>refclk</name>
+                        <role>clk</role>
+                        <direction>Input</direction>
+                        <width>1</width>
+                        <lowerBound>0</lowerBound>
+                        <vhdlType>STD_LOGIC</vhdlType>
+                    </port>
+                </ports>
+                <assignments>
+                    <assignmentValueMap>
+                        <entry>
+                            <key>ui.blockdiagram.direction</key>
+                            <value>input</value>
+                        </entry>
+                    </assignmentValueMap>
+                </assignments>
+                <parameters>
+                    <parameterValueMap>
+                        <entry>
+                            <key>clockRate</key>
+                            <value>50000000</value>
+                        </entry>
+                        <entry>
+                            <key>externallyDriven</key>
+                            <value>false</value>
+                        </entry>
+                        <entry>
+                            <key>ptfSchematicName</key>
+                        </entry>
+                    </parameterValueMap>
+                </parameters>
+            </interface>
+            <interface>
                 <name>locked</name>
                 <type>conduit</type>
                 <isStart>false</isStart>
@@ -18093,14 +18165,14 @@
                 </parameters>
             </interface>
             <interface>
-                <name>refclk</name>
+                <name>outclk2</name>
                 <type>clock</type>
-                <isStart>false</isStart>
+                <isStart>true</isStart>
                 <ports>
                     <port>
-                        <name>refclk</name>
+                        <name>outclk_2</name>
                         <role>clk</role>
-                        <direction>Input</direction>
+                        <direction>Output</direction>
                         <width>1</width>
                         <lowerBound>0</lowerBound>
                         <vhdlType>STD_LOGIC</vhdlType>
@@ -18110,15 +18182,22 @@
                     <assignmentValueMap>
                         <entry>
                             <key>ui.blockdiagram.direction</key>
-                            <value>input</value>
+                            <value>output</value>
                         </entry>
                     </assignmentValueMap>
                 </assignments>
                 <parameters>
                     <parameterValueMap>
                         <entry>
+                            <key>associatedDirectClock</key>
+                        </entry>
+                        <entry>
                             <key>clockRate</key>
-                            <value>50000000</value>
+                            <value>150000000</value>
+                        </entry>
+                        <entry>
+                            <key>clockRateKnown</key>
+                            <value>true</value>
                         </entry>
                         <entry>
                             <key>externallyDriven</key>
@@ -18126,40 +18205,6 @@
                         </entry>
                         <entry>
                             <key>ptfSchematicName</key>
-                        </entry>
-                    </parameterValueMap>
-                </parameters>
-            </interface>
-            <interface>
-                <name>reset</name>
-                <type>reset</type>
-                <isStart>false</isStart>
-                <ports>
-                    <port>
-                        <name>rst</name>
-                        <role>reset</role>
-                        <direction>Input</direction>
-                        <width>1</width>
-                        <lowerBound>0</lowerBound>
-                        <vhdlType>STD_LOGIC</vhdlType>
-                    </port>
-                </ports>
-                <assignments>
-                    <assignmentValueMap>
-                        <entry>
-                            <key>ui.blockdiagram.direction</key>
-                            <value>input</value>
-                        </entry>
-                    </assignmentValueMap>
-                </assignments>
-                <parameters>
-                    <parameterValueMap>
-                        <entry>
-                            <key>associatedClock</key>
-                        </entry>
-                        <entry>
-                            <key>synchronousEdges</key>
-                            <value>NONE</value>
                         </entry>
                     </parameterValueMap>
                 </parameters>
@@ -18228,11 +18273,96 @@
                     <consumedSystemInfos/>
                 </value>
             </entry>
+            <entry>
+                <key>outclk2</key>
+                <value>
+                    <connectionPointName>outclk2</connectionPointName>
+                    <suppliedSystemInfos>
+                        <entry>
+                            <key>CLOCK_RATE</key>
+                            <value>150000000</value>
+                        </entry>
+                    </suppliedSystemInfos>
+                    <consumedSystemInfos/>
+                </value>
+            </entry>
         </connPtSystemInfos>
     </systemInfos>
 </componentDefinition>]]></parameter>
   <parameter name="defaultBoundary"><![CDATA[<boundaryDefinition>
     <interfaces>
+        <interface>
+            <name>reset</name>
+            <type>reset</type>
+            <isStart>false</isStart>
+            <ports>
+                <port>
+                    <name>rst</name>
+                    <role>reset</role>
+                    <direction>Input</direction>
+                    <width>1</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC</vhdlType>
+                </port>
+            </ports>
+            <assignments>
+                <assignmentValueMap>
+                    <entry>
+                        <key>ui.blockdiagram.direction</key>
+                        <value>input</value>
+                    </entry>
+                </assignmentValueMap>
+            </assignments>
+            <parameters>
+                <parameterValueMap>
+                    <entry>
+                        <key>associatedClock</key>
+                    </entry>
+                    <entry>
+                        <key>synchronousEdges</key>
+                        <value>NONE</value>
+                    </entry>
+                </parameterValueMap>
+            </parameters>
+        </interface>
+        <interface>
+            <name>refclk</name>
+            <type>clock</type>
+            <isStart>false</isStart>
+            <ports>
+                <port>
+                    <name>refclk</name>
+                    <role>clk</role>
+                    <direction>Input</direction>
+                    <width>1</width>
+                    <lowerBound>0</lowerBound>
+                    <vhdlType>STD_LOGIC</vhdlType>
+                </port>
+            </ports>
+            <assignments>
+                <assignmentValueMap>
+                    <entry>
+                        <key>ui.blockdiagram.direction</key>
+                        <value>input</value>
+                    </entry>
+                </assignmentValueMap>
+            </assignments>
+            <parameters>
+                <parameterValueMap>
+                    <entry>
+                        <key>clockRate</key>
+                        <value>50000000</value>
+                    </entry>
+                    <entry>
+                        <key>externallyDriven</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>ptfSchematicName</key>
+                    </entry>
+                </parameterValueMap>
+            </parameters>
+        </interface>
         <interface>
             <name>locked</name>
             <type>conduit</type>
@@ -18361,14 +18491,14 @@
             </parameters>
         </interface>
         <interface>
-            <name>refclk</name>
+            <name>outclk2</name>
             <type>clock</type>
-            <isStart>false</isStart>
+            <isStart>true</isStart>
             <ports>
                 <port>
-                    <name>refclk</name>
+                    <name>outclk_2</name>
                     <role>clk</role>
-                    <direction>Input</direction>
+                    <direction>Output</direction>
                     <width>1</width>
                     <lowerBound>0</lowerBound>
                     <vhdlType>STD_LOGIC</vhdlType>
@@ -18378,15 +18508,22 @@
                 <assignmentValueMap>
                     <entry>
                         <key>ui.blockdiagram.direction</key>
-                        <value>input</value>
+                        <value>output</value>
                     </entry>
                 </assignmentValueMap>
             </assignments>
             <parameters>
                 <parameterValueMap>
                     <entry>
+                        <key>associatedDirectClock</key>
+                    </entry>
+                    <entry>
                         <key>clockRate</key>
-                        <value>50000000</value>
+                        <value>150000000</value>
+                    </entry>
+                    <entry>
+                        <key>clockRateKnown</key>
+                        <value>true</value>
                     </entry>
                     <entry>
                         <key>externallyDriven</key>
@@ -18394,40 +18531,6 @@
                     </entry>
                     <entry>
                         <key>ptfSchematicName</key>
-                    </entry>
-                </parameterValueMap>
-            </parameters>
-        </interface>
-        <interface>
-            <name>reset</name>
-            <type>reset</type>
-            <isStart>false</isStart>
-            <ports>
-                <port>
-                    <name>rst</name>
-                    <role>reset</role>
-                    <direction>Input</direction>
-                    <width>1</width>
-                    <lowerBound>0</lowerBound>
-                    <vhdlType>STD_LOGIC</vhdlType>
-                </port>
-            </ports>
-            <assignments>
-                <assignmentValueMap>
-                    <entry>
-                        <key>ui.blockdiagram.direction</key>
-                        <value>input</value>
-                    </entry>
-                </assignmentValueMap>
-            </assignments>
-            <parameters>
-                <parameterValueMap>
-                    <entry>
-                        <key>associatedClock</key>
-                    </entry>
-                    <entry>
-                        <key>synchronousEdges</key>
-                        <value>NONE</value>
                     </entry>
                 </parameterValueMap>
             </parameters>
@@ -20043,7 +20146,7 @@
                     <consumedSystemInfos>
                         <entry>
                             <key>CLOCK_RATE</key>
-                            <value>200000000</value>
+                            <value>150000000</value>
                         </entry>
                     </consumedSystemInfos>
                 </value>
@@ -20234,7 +20337,6 @@
                     </entry>
                     <entry>
                         <key>bridgedAddressOffset</key>
-                        <value>0</value>
                     </entry>
                     <entry>
                         <key>bridgesToMaster</key>
@@ -20496,7 +20598,6 @@
                     </entry>
                     <entry>
                         <key>bridgedReceiverOffset</key>
-                        <value>0</value>
                     </entry>
                     <entry>
                         <key>bridgesToReceiver</key>
@@ -29033,11 +29134,6 @@
    kind="clock"
    version="19.2"
    start="iopll_0.outclk1"
-   end="jtag_uart_1.clk" />
- <connection
-   kind="clock"
-   version="19.2"
-   start="iopll_0.outclk1"
    end="onchip_memory2_0.clk1" />
  <connection
    kind="clock"
@@ -29048,12 +29144,17 @@
    kind="clock"
    version="19.2"
    start="iopll_0.outclk1"
-   end="Pebbles_0.clock" />
+   end="mm_clock_crossing_bridge_50m.s0_clk" />
  <connection
    kind="clock"
    version="19.2"
-   start="iopll_0.outclk1"
-   end="mm_clock_crossing_bridge_50m.s0_clk" />
+   start="iopll_0.outclk2"
+   end="jtag_uart_1.clk" />
+ <connection
+   kind="clock"
+   version="19.2"
+   start="iopll_0.outclk2"
+   end="Pebbles_0.clock" />
  <connection
    kind="conduit"
    version="19.2"
