@@ -2,8 +2,8 @@
 <ns2:Settings xmlns:ns2="http://www.altera.com/embeddedsw/bsp/schema">
     <BspType>hal</BspType>
     <BspVersion>default</BspVersion>
-    <BspGeneratedTimeStamp>Oct 29, 2020 4:29:15 PM</BspGeneratedTimeStamp>
-    <BspGeneratedUnixTimeStamp>1603988955813</BspGeneratedUnixTimeStamp>
+    <BspGeneratedTimeStamp>Nov 6, 2020 10:21:45 PM</BspGeneratedTimeStamp>
+    <BspGeneratedUnixTimeStamp>1604701305835</BspGeneratedUnixTimeStamp>
     <BspGeneratedLocation>./</BspGeneratedLocation>
     <BspSettingsFile>MEM_TEST_bsp/settings.bsp</BspSettingsFile>
     <SopcDesignFile>../../DE10_Pro_QSYS/DE10_Pro_QSYS.sopcinfo</SopcDesignFile>
@@ -895,7 +895,7 @@
         <attributes>timer</attributes>
     </MemoryMap>
     <MemoryMap>
-        <slaveDescriptor>button</slaveDescriptor>
+        <slaveDescriptor>power_max_pio</slaveDescriptor>
         <addressRange>0x40081020 - 0x4008102F</addressRange>
         <addressSpan>16</addressSpan>
         <attributes></attributes>
@@ -927,6 +927,12 @@
     <MemoryMap>
         <slaveDescriptor>temp_pio</slaveDescriptor>
         <addressRange>0x40081060 - 0x4008106F</addressRange>
+        <addressSpan>16</addressSpan>
+        <attributes></attributes>
+    </MemoryMap>
+    <MemoryMap>
+        <slaveDescriptor>power_min_pio</slaveDescriptor>
+        <addressRange>0x40081070 - 0x4008107F</addressRange>
         <addressSpan>16</addressSpan>
         <attributes></attributes>
     </MemoryMap>

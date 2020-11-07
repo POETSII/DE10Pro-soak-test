@@ -1736,6 +1736,7 @@ set_global_assignment -name IP_FILE ip/DE10_Pro_QSYS/DE10_Pro_QSYS_sysid_qsys_0.
 set_global_assignment -name IP_FILE ip/DE10_Pro_QSYS/DE10_Pro_QSYS_clock_in.ip
 set_global_assignment -name IP_FILE ip/DE10_Pro_QSYS/DE10_Pro_QSYS_jtag_uart_0.ip
 set_global_assignment -name VERILOG_FILE ../temperature/mkTempReader.v
+set_global_assignment -name VERILOG_FILE ../temperature/mkPowerReader.v
 set_global_assignment -name VERILOG_FILE ../temperature/SizedFIFO.v
 set_global_assignment -name VERILOG_FILE ../temperature/Counter.v
 set_global_assignment -name VERILOG_FILE ../temperature/TriState.v
@@ -1758,3 +1759,6 @@ set_global_assignment -name IP_FILE ip/DE10_Pro_QSYS/DE10_Pro_QSYS_alt_e100s10_2
 set_global_assignment -name IP_FILE ip/DE10_Pro_QSYS/DE10_Pro_QSYS_alt_e100s10_3.ip
 set_global_assignment -name IP_FILE ip/DE10_Pro_QSYS/DE10_Pro_QSYS_pio_1.ip
 set_global_assignment -name IP_FILE ip/DE10_Pro_QSYS/DE10_Pro_QSYS_TempReader_0.ip
+set_global_assignment -name IP_FILE ip/DE10_Pro_QSYS/DE10_Pro_QSYS_PowerReader_0.ip
+set_global_assignment -name IP_FILE ip/DE10_Pro_QSYS/DE10_Pro_QSYS_pio_2.ip
+set_global_assignment -name IP_FILE ip/DE10_Pro_QSYS/DE10_Pro_QSYS_pio_3.ip

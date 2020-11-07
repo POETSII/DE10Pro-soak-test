@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'DE10_Pro_QSYS'
  * SOPC Builder design path: ../../DE10_Pro_QSYS/DE10_Pro_QSYS.sopcinfo
  *
- * Generated: Thu Oct 29 15:51:12 UTC 2020
+ * Generated: Fri Nov 06 22:14:04 UTC 2020
  */
 
 /*
@@ -233,33 +233,6 @@
 
 
 /*
- * button configuration
- *
- */
-
-#define ALT_MODULE_CLASS_button altera_avalon_pio
-#define BUTTON_BASE 0x40081020
-#define BUTTON_BIT_CLEARING_EDGE_REGISTER 0
-#define BUTTON_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define BUTTON_CAPTURE 1
-#define BUTTON_DATA_WIDTH 2
-#define BUTTON_DO_TEST_BENCH_WIRING 0
-#define BUTTON_DRIVEN_SIM_VALUE 0
-#define BUTTON_EDGE_TYPE "ANY"
-#define BUTTON_FREQ 50000000
-#define BUTTON_HAS_IN 1
-#define BUTTON_HAS_OUT 0
-#define BUTTON_HAS_TRI 0
-#define BUTTON_IRQ 2
-#define BUTTON_IRQ_INTERRUPT_CONTROLLER_ID 0
-#define BUTTON_IRQ_TYPE "EDGE"
-#define BUTTON_NAME "/dev/button"
-#define BUTTON_RESET_VALUE 0
-#define BUTTON_SPAN 16
-#define BUTTON_TYPE "altera_avalon_pio"
-
-
-/*
  * ddr4_local_reset_req configuration
  *
  */
@@ -369,6 +342,60 @@
 #define ONCHIP_MEMORY2_0_SPAN 256000
 #define ONCHIP_MEMORY2_0_TYPE "altera_avalon_onchip_memory2"
 #define ONCHIP_MEMORY2_0_WRITABLE 1
+
+
+/*
+ * power_max_pio configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_power_max_pio altera_avalon_pio
+#define POWER_MAX_PIO_BASE 0x40081020
+#define POWER_MAX_PIO_BIT_CLEARING_EDGE_REGISTER 0
+#define POWER_MAX_PIO_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define POWER_MAX_PIO_CAPTURE 0
+#define POWER_MAX_PIO_DATA_WIDTH 24
+#define POWER_MAX_PIO_DO_TEST_BENCH_WIRING 0
+#define POWER_MAX_PIO_DRIVEN_SIM_VALUE 0
+#define POWER_MAX_PIO_EDGE_TYPE "NONE"
+#define POWER_MAX_PIO_FREQ 50000000
+#define POWER_MAX_PIO_HAS_IN 1
+#define POWER_MAX_PIO_HAS_OUT 0
+#define POWER_MAX_PIO_HAS_TRI 0
+#define POWER_MAX_PIO_IRQ -1
+#define POWER_MAX_PIO_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define POWER_MAX_PIO_IRQ_TYPE "NONE"
+#define POWER_MAX_PIO_NAME "/dev/power_max_pio"
+#define POWER_MAX_PIO_RESET_VALUE 0
+#define POWER_MAX_PIO_SPAN 16
+#define POWER_MAX_PIO_TYPE "altera_avalon_pio"
+
+
+/*
+ * power_min_pio configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_power_min_pio altera_avalon_pio
+#define POWER_MIN_PIO_BASE 0x40081070
+#define POWER_MIN_PIO_BIT_CLEARING_EDGE_REGISTER 0
+#define POWER_MIN_PIO_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define POWER_MIN_PIO_CAPTURE 0
+#define POWER_MIN_PIO_DATA_WIDTH 24
+#define POWER_MIN_PIO_DO_TEST_BENCH_WIRING 0
+#define POWER_MIN_PIO_DRIVEN_SIM_VALUE 0
+#define POWER_MIN_PIO_EDGE_TYPE "NONE"
+#define POWER_MIN_PIO_FREQ 50000000
+#define POWER_MIN_PIO_HAS_IN 1
+#define POWER_MIN_PIO_HAS_OUT 0
+#define POWER_MIN_PIO_HAS_TRI 0
+#define POWER_MIN_PIO_IRQ -1
+#define POWER_MIN_PIO_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define POWER_MIN_PIO_IRQ_TYPE "NONE"
+#define POWER_MIN_PIO_NAME "/dev/power_min_pio"
+#define POWER_MIN_PIO_RESET_VALUE 0
+#define POWER_MIN_PIO_SPAN 16
+#define POWER_MIN_PIO_TYPE "altera_avalon_pio"
 
 
 /*

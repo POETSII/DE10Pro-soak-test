@@ -3794,7 +3794,7 @@
         <ipxact:parameter parameterId="hp_previous_num_clocks" type="int">
           <ipxact:name>hp_previous_num_clocks</ipxact:name>
           <ipxact:displayName>hp_previous_num_clocks</ipxact:displayName>
-          <ipxact:value>3</ipxact:value>
+          <ipxact:value>1</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="hp_actual_vco_frequency_fp" type="real">
           <ipxact:name>hp_actual_vco_frequency_fp</ipxact:name>

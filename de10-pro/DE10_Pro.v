@@ -573,8 +573,10 @@ DE10_Pro_QSYS DE10_Pro_QSYS_inst (
 		/*output wire        */    .emif_s10_ddr4_d_status_local_cal_success(ddr4_d_status_local_cal_success),            
 		/*output wire        */ .emif_s10_ddr4_d_status_local_cal_fail(ddr4_d_status_local_cal_fail),
 
-        .tempreader_0_i2c_signals_scl                        (TEMP_I2C_SCL),
-        .tempreader_0_i2c_signals_sda                        (TEMP_I2C_SDA),
+        .tempreader_0_i2c_signals_scl             (TEMP_I2C_SCL),
+        .tempreader_0_i2c_signals_sda             (TEMP_I2C_SDA),
+        .powerreader_0_power_i2c_export_sda       (POWER_MONITOR_I2C_SDA),
+        .powerreader_0_power_i2c_export_scl       (POWER_MONITOR_I2C_SCL),
 
         .alt_e100s10_0_status_clk_status                     (CLK_50_B3I),                                                         //   input,    width = 1,
         .alt_e100s10_0_status_status_write                   (0),                                                                  //   input,    width = 1,

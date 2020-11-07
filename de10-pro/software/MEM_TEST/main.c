@@ -70,9 +70,14 @@ int GUI_QueryUser(void){
 //===============================================================
 int main(void){
     while (1) {
-      printf("%i\n", IORD(TEMP_PIO_BASE, 0x00));
-      usleep(1000000);
+      printf("Temp: %i\n", IORD(TEMP_PIO_BASE, 0x00));
+      printf("PowerMin: %i\n", IORD(POWER_MIN_PIO_BASE, 0x00));
+      printf("PowerMax: %i\n", IORD(POWER_MAX_PIO_BASE, 0x00));
+      printf("Press <ENTER> for another temp/power reading\n");
+      getchar();
+      //usleep(1000000);
     }
+
 /*
     int nChoice;
     int nNum;
@@ -114,6 +119,7 @@ bool TEST_DDR4(void){
         printf("\n==========================================================\n");
 
         printf("Press any BUTTON on the board to start test [BUTTON-0 for continued test] \n");
+/*
         ButtonStatus = ButtonMask;
         while((ButtonStatus & ButtonMask) == ButtonMask){
         	ButtonStatus = IORD(BUTTON_BASE, 0);
@@ -126,6 +132,8 @@ bool TEST_DDR4(void){
             bLoop = FALSE;
             usleep(300*1000);
         }
+*/
+  bLoop = FALSE;
 
 
 		//
@@ -330,8 +338,8 @@ bool TEST_DDR4(void){
 
 
             if (bPassA && bPassB && bPassC && bPassD && bLoop){  // is abort loop?
-            	ButtonStatus = IORD(BUTTON_BASE, 0);
-            	if ((ButtonStatus & ButtonMask) != ButtonMask)
+            	//ButtonStatus = IORD(BUTTON_BASE, 0);
+            	//if ((ButtonStatus & ButtonMask) != ButtonMask)
             		bLoop = FALSE; // press any key to abort continued test
             }
 
@@ -368,6 +376,7 @@ bool TEST_DDR4_QUICK(void){
         printf("\n==========================================================\n");
 
         printf("Press any BUTTON on the board to start test [BUTTON-0 for continued test] \n");
+/*
         ButtonStatus = ButtonMask;
         while((ButtonStatus & ButtonMask) == ButtonMask){
         	ButtonStatus = IORD(BUTTON_BASE, 0);
@@ -380,6 +389,9 @@ bool TEST_DDR4_QUICK(void){
             bLoop = FALSE;
             usleep(300*1000);
         }
+*/
+  bLoop = FALSE;
+ 
 
 
 		//
@@ -585,8 +597,8 @@ bool TEST_DDR4_QUICK(void){
 
 
             if (bPassA && bPassB && bPassC && bPassD && bLoop){  // is abort loop?
-            	ButtonStatus = IORD(BUTTON_BASE, 0);
-            	if ((ButtonStatus & ButtonMask) != ButtonMask)
+            	//ButtonStatus = IORD(BUTTON_BASE, 0);
+            	//if ((ButtonStatus & ButtonMask) != ButtonMask)
             		bLoop = FALSE; // press any key to abort continued test
             }
 
