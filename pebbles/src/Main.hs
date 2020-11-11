@@ -27,7 +27,7 @@ main = do
         }
   writeVerilogModule (makeScalarCore config) "pebbles_core" "./"
   -- Generate code for a tree of scalar cores
-  let numCores = 1
+  let numCores = 800
   writeVerilogModule (makeScalarCoreChain numCores) "Pebbles" "./"
 
 -- Helper code

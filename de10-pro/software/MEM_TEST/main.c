@@ -69,10 +69,11 @@ int GUI_QueryUser(void){
 
 //===============================================================
 int main(void){
+    const int powerScale = 4800;
     while (1) {
       printf("Temp: %i\n", IORD(TEMP_PIO_BASE, 0x00));
-      printf("PowerMin: %i\n", IORD(POWER_MIN_PIO_BASE, 0x00));
-      printf("PowerMax: %i\n", IORD(POWER_MAX_PIO_BASE, 0x00));
+      printf("PowerMin: %iW\n", IORD(POWER_MIN_PIO_BASE, 0x00)/powerScale);
+      printf("PowerMax: %iW\n", IORD(POWER_MAX_PIO_BASE, 0x00)/powerScale);
       printf("Press <ENTER> for another temp/power reading\n");
       getchar();
       //usleep(1000000);
