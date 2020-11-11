@@ -3,7 +3,7 @@
 This is a project for the DE10-Pro with 4xDDR4 controllers (memory
 test driven by NIOS-II), 4x100G MACs (always transmitting), and a
 configurable number of RV32IM scalar Pebbles cores (800 by default).
-The temperature is polled and reported over the JTAG UART.
+The temperature and power are polled and reported over the JTAG UART.
 
 ## Usage
 
@@ -36,7 +36,7 @@ To program a DE10-Pro on cable 1:
 > quartus_pgm -c 1 -m jtag -o "p;output_files/DE10_Pro.sof"
 ```
 
-To run the temperature reader:
+To run the temperature and power reader:
 
 ```sh
 > cd software
