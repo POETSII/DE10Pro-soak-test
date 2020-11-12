@@ -30,6 +30,9 @@ build a bitfile:
 Warning: by default the design includes 800 Pebbles cores, which takes
 around 16 hours to build.
 
+Alternatively, download a prebuilt bitfile
+[here](https://github.com/POETSII/de10-soak-test/releases/tag/v0.1).
+
 To program a DE10-Pro on cable 1:
 
 ```sh
