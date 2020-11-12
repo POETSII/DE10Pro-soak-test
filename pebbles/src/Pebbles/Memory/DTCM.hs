@@ -14,7 +14,7 @@ import Pebbles.Memory.Interface
 -- One possible implementation of MemUnit, using a block RAM
 
 -- DTCM size
-type DTCMAddrWidth = 8
+type DTCMAddrWidth = 9
 
 -- Tightly-coupled data memory with single-cycle read latency
 makeDTCM :: Maybe String -> Module MemUnit

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="DE10_Pro_QSYS" kind="DE10_Pro_QSYS" version="1.0" fabric="QSYS">
  <!-- Format version 19.2 57 (Future versions may contain additional information.) -->
- <!-- 2020.11.11.09:07:03 -->
+ <!-- 2020.11.11.09:30:45 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>

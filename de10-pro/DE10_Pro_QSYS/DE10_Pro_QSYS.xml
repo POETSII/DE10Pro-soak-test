@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2020.11.11.09:07:09"
+ date="2020.11.11.09:30:51"
  outputDirectory="/local/scratch/mn416/de10-soak-test/de10-pro/DE10_Pro_QSYS/">
  <perimeter>
   <parameter

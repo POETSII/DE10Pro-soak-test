@@ -73,13 +73,13 @@ module pebbles_core
   wire [0:0] v_50;
   reg [31:0] v_51 = 32'h0;
   wire [31:0] v_52;
-  wire [7:0] v_53;
-  wire [7:0] v_54;
-  function [7:0] mux_54(input [0:0] sel);
-    case (sel) 0: mux_54 = 8'h0; 1: mux_54 = v_55;
+  wire [8:0] v_53;
+  wire [8:0] v_54;
+  function [8:0] mux_54(input [0:0] sel);
+    case (sel) 0: mux_54 = 9'h0; 1: mux_54 = v_55;
     endcase
   endfunction
-  wire [7:0] v_55;
+  wire [8:0] v_55;
   wire [29:0] v_56;
   wire [31:0] v_57;
   function [31:0] mux_57(input [0:0] sel);
@@ -1557,10 +1557,10 @@ module pebbles_core
   wire [32:0] v_1222;
   wire [7:0] v_1223;
   wire [31:0] v_1224;
-  wire [7:0] v_1225;
-  wire [7:0] v_1226;
-  function [7:0] mux_1226(input [0:0] sel);
-    case (sel) 0: mux_1226 = 8'h0; 1: mux_1226 = 8'bxxxxxxxx;
+  wire [8:0] v_1225;
+  wire [8:0] v_1226;
+  function [8:0] mux_1226(input [0:0] sel);
+    case (sel) 0: mux_1226 = 9'h0; 1: mux_1226 = 9'bxxxxxxxxx;
     endcase
   endfunction
   wire [0:0] v_1227;
@@ -1568,17 +1568,17 @@ module pebbles_core
   wire [0:0] v_1229;
   wire [0:0] v_1230;
   wire [0:0] v_1231;
-  wire [7:0] v_1232;
-  wire [7:0] v_1233;
-  function [7:0] mux_1233(input [0:0] sel);
-    case (sel) 0: mux_1233 = 8'h0; 1: mux_1233 = v_1234;
+  wire [8:0] v_1232;
+  wire [8:0] v_1233;
+  function [8:0] mux_1233(input [0:0] sel);
+    case (sel) 0: mux_1233 = 9'h0; 1: mux_1233 = v_1234;
     endcase
   endfunction
-  wire [7:0] v_1234;
+  wire [8:0] v_1234;
   wire [29:0] v_1235;
-  wire [7:0] v_1236;
-  function [7:0] mux_1236(input [0:0] sel);
-    case (sel) 0: mux_1236 = 8'h0; 1: mux_1236 = v_1234;
+  wire [8:0] v_1236;
+  function [8:0] mux_1236(input [0:0] sel);
+    case (sel) 0: mux_1236 = 9'h0; 1: mux_1236 = v_1234;
     endcase
   endfunction
   wire [31:0] v_1237;
@@ -3204,9 +3204,9 @@ module pebbles_core
   wire [0:0] v_2599;
   wire [0:0] v_2600;
   wire [31:0] v_2601;
-  wire [7:0] v_2602;
-  function [7:0] mux_2602(input [0:0] sel);
-    case (sel) 0: mux_2602 = 8'h0; 1: mux_2602 = 8'bxxxxxxxx;
+  wire [8:0] v_2602;
+  function [8:0] mux_2602(input [0:0] sel);
+    case (sel) 0: mux_2602 = 9'h0; 1: mux_2602 = 9'bxxxxxxxxx;
     endcase
   endfunction
   wire [0:0] v_2603;
@@ -3435,7 +3435,7 @@ module pebbles_core
   assign v_48 = v_49 & v_137;
   assign v_49 = 1'h1 & v_50;
   assign v_50 = v_51[1:1];
-  BlockRAM# (.INIT_FILE("prog.mif"), .ADDR_WIDTH(8), .DATA_WIDTH(32))
+  BlockRAM# (.INIT_FILE("prog.mif"), .ADDR_WIDTH(9), .DATA_WIDTH(32))
     ram52
       (.CLK(clock),
        .ADDR(v_53),
@@ -3445,7 +3445,7 @@ module pebbles_core
        .DO(v_52));
   assign v_53 = v_54 | v_2602;
   assign v_54 = mux_54(1'h1);
-  assign v_55 = v_56[7:0];
+  assign v_55 = v_56[8:0];
   assign v_56 = v_57[31:2];
   assign v_57 = mux_57(act_35);
   assign v_58 = v_59 + 32'h4;
@@ -4572,7 +4572,7 @@ module pebbles_core
   assign v_1222 = v_1151[32:0];
   assign v_1223 = v_1224[7:0];
   BlockRAMBE#
-    (.INIT_FILE("data.mif"), .ADDR_WIDTH(8), .DATA_WIDTH(32))
+    (.INIT_FILE("data.mif"), .ADDR_WIDTH(9), .DATA_WIDTH(32))
     ram1224
       (.CLK(clock),
        .ADDR(v_1225),
@@ -4590,7 +4590,7 @@ module pebbles_core
   assign v_1231 = v_1157 & v_444;
   assign v_1232 = v_1233 | v_1236;
   assign v_1233 = mux_1233(v_1229);
-  assign v_1234 = v_1235[7:0];
+  assign v_1234 = v_1235[8:0];
   assign v_1235 = v_1166[31:2];
   assign v_1236 = mux_1236(v_1231);
   assign v_1237 = v_1238 | v_1239;

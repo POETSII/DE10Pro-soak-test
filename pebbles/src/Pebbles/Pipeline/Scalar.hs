@@ -28,7 +28,7 @@ import qualified Data.Map as Map
 import Pebbles.Pipeline.Interface
 
 -- Instruction memory size
-type InstrAddr = Bit 8
+type InstrAddr = Bit 9
 
 -- Scalar pipeline configuration
 data ScalarPipelineConfig =
